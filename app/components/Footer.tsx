@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { LOGO } from "@/constants/logo";
 import { C } from "@/constants/colors";
-import { Shield } from "@/components/ui/Shield";
+
 const [lang, setLang] = useState<Lang>("FR");
 import {
   NAV_ROUTES,
@@ -15,6 +15,8 @@ import {
 import { NAV_LABELS, TILES } from "@/data/navigation";
 // import { useMhave } from "@/context/MhaveContext";
 import type { Lang } from "@/types";
+import { useState } from "react";
+import { Shield } from "../utils";
 
 /* ─── Static data ─────────────────────────────────────────────────────────── */
 type Lang = "FR" | "HT" | "EN" | "ESP";

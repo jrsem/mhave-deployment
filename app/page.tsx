@@ -1117,6 +1117,8 @@ export default function MhavelHsiSovereignPortal() {
         background: C.cream,
         minHeight: "100vh",
         position: "relative",
+        display: "flex",
+        flexDirection: "column",
       }}
     >
       <style>{`
@@ -1309,6 +1311,9 @@ export default function MhavelHsiSovereignPortal() {
           ))}
         </div>
       </header>
+
+      {/* Main content wrapper */}
+      <main style={{ flex: 1 }}>
 
       {/* Hero */}
       <section
@@ -1758,7 +1763,13 @@ export default function MhavelHsiSovereignPortal() {
         </div>
       </section>
 
-      {/* Compliance strip */}
+     
+
+      </main>
+
+      {/* Footer */}
+      <div>
+ {/* Compliance strip */}
       <div
         style={{
           background: C.dark,
@@ -1782,8 +1793,8 @@ export default function MhavelHsiSovereignPortal() {
         ))}
       </div>
 
-      {/* Footer */}
-      {/* <footer
+{/* foote */}
+ <footer
         style={{
           background: C.navy,
           padding: "16px 18px",
@@ -1821,9 +1832,11 @@ export default function MhavelHsiSovereignPortal() {
             Enfrastriktè Bare Metal Private Cloud
           </span>
         </div>
-      </footer> */}
+      </footer>
+      </div>
+     
 
-     <Footer/>
+     {/* <Footer/> */}
 
 
       {/* Sidebar */}
