@@ -1,6 +1,6 @@
 "use client";
 import { useState, useRef, useEffect } from "react";
-
+import {Footer} from "./components/Footer"
 const C = {
   navy: "#002060",
   dark: "#001040",
@@ -1783,7 +1783,7 @@ export default function MhavelHsiSovereignPortal() {
       </div>
 
       {/* Footer */}
-      <footer
+      {/* <footer
         style={{
           background: C.navy,
           padding: "16px 18px",
@@ -1795,6 +1795,7 @@ export default function MhavelHsiSovereignPortal() {
           borderTop: `2px solid ${C.bord}`,
         }}
       >
+
         <div>
           <div style={{ color: C.white, fontSize: 12, fontWeight: 700 }}>
             MHAVE — Ministère des Haïtiens Vivant à l&apos;Étranger
@@ -1804,6 +1805,7 @@ export default function MhavelHsiSovereignPortal() {
             contact@mhave.gouv.ht
           </div>
         </div>
+
         <div
           style={{
             display: "flex",
@@ -1819,7 +1821,10 @@ export default function MhavelHsiSovereignPortal() {
             Enfrastriktè Bare Metal Private Cloud
           </span>
         </div>
-      </footer>
+      </footer> */}
+
+     <Footer/>
+
 
       {/* Sidebar */}
       <div

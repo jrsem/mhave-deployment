@@ -1,5 +1,7 @@
 // Tailwind removed — page.tsx uses inline styles only
 const config = {
-  plugins: {},
+  plugins: {
+    "@tailwindcss/postcss": {},
+  },
 };
 export default config;

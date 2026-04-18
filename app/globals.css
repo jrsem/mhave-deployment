@@ -1,4 +1,5 @@
 /* No Tailwind — page.tsx is 100% inline styles */
+@import "tailwindcss";
 *,
 *::before,
 *::after {
