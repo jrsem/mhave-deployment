@@ -1,5 +1,674 @@
 {
   "HeroSection": {
-    "title": "Lyen ou ak Tè Natif-Natal."
+    "title": "Lyen ou ak Peyi Natal la.",
+    "sub": "Jwenn aksè ak sèvis Leta ayisyen an san danje depi aletranje. Yon enfrastrikti sovèren pou yon dyaspora konekte.",
+    "ph": "Chèche yon sèvis, yon fòm, yon pwosedi…",
+    "btn": "CHÈCHE",
+    "svcTitle": "SÈVIS POU SITWAYEN",
+    "oniLabel": "NIMEWO IDANTIFIKASYON INIK (NINU)",
+    "oniBtn": "VERIFYE",
+    "sidebar": ["PATAJE", "CHAT", "SIJESYON", "ENPRIME"],
+    "chatTitle": "💬 Asistan MHAVE",
+    "chatGreet": "Bonjou! Mwen se asistan vityèl MHAVE a. Kijan mwen ka ede ou?",
+    "chatPh": "Poze yon kesyon…",
+    "chatSend": "↗",
+    "suggestTitle": "💡 Voye yon Sijesyon",
+    "suggestSend": "📧 Voye pa imèl",
+    "suggestTo": "Pou",
+    "suggestSubj": "Sijè",
+    "suggestBody": "Mesaj",
+    "suggestPh": "Sijesyon ou…",
+    "shareCopied": "Lyen kopye!"
+  },
+  "Navigation": {
+    "labels": ["AKÈY", "PREZANTASYON MHAVE", "SÈVIS", "PWOSEDI ADMIN.", "IDANTITE KILTIRÈL", "MEDIATEK", "KONTAK"]
+  },
+  "Tiles": {
+    "items": [
+      { "label": "VIV ALETRANJE", "icon": "🏠" },
+      { "label": "VINI AN AYITI", "icon": "✈️" },
+      { "label": "ENVESTI AN AYITI", "icon": "💰" },
+      { "label": "MHAVE KOUTE", "icon": "👂" },
+      { "label": "PWOSEDI MHAVE", "icon": "💼" }
+    ]
+  },
+  "Search": {
+    "items": [
+      { "icon": "🪪", "title": "Verifye NINU ou", "cat": "Idantite", "desc": "Konsilte estati NINU ou atravè pòtal DELIDOC ONI an liy." },
+      { "icon": "📘", "title": "Renouvèlman paspò", "cat": "Dokiman", "desc": "Depoze demann ou via DELIDOC Paspò depi aletranje." },
+      { "icon": "✈️", "title": "Fòm iKat — Rive Ayiti", "cat": "Imigrasyon", "desc": "Ranpli fòm dijital rive obligatwa anvan ou antre Ayiti." },
+      { "icon": "📜", "title": "Ekstrè akta nesans", "cat": "Achiv", "desc": "Kòmande ekstrè sètifye ou nan Achiv Nasyonal Ayiti." },
+      { "icon": "💰", "title": "Opòtinite envèstisman", "cat": "Ekonomi", "desc": "Sektè priyoritè ak ankourajman fiskal pou envesti an Ayiti." },
+      { "icon": "👂", "title": "MHAVE Koute", "cat": "Kontak", "desc": "Soumèt dòleyans oswa sijesyon ou bay ekip MHAVE a." }
+    ]
+  },
+  "Services": {
+    "items": [
+      {
+        "icon": "🪪",
+        "title": "IDANTITE DIJITAL",
+        "color": "#6d28d9",
+        "bg": "#ede9fe",
+        "headline": "Verifye epi jere Idantite Dijital ayisyen ou",
+        "intro": "Nimewo Idantifikasyon Inik (NINU) se idantifyan ofisyèl chak sitwayen ayisyen, ki delivre pa Ofis Nasyonal Idantifikasyon (ONI). De platfòm ofisyèl pèmèt ou jere idantite ou an liy.",
+        "steps": [
+          "Verifye NINU ou (10 chif) via DELIDOC ONI — swiv estati an tan reyèl",
+          "Kat pèdi oswa vòlè? Depoze dòleyans ou sou pòtal DELIDOC ONI",
+          "W ap antre Ayiti? Ranpli fòm iKat (Fòm Dijital Rive) anvan ou rive",
+          "Pou yon demann paspò, aksede DELIDOC Paspò — nouvo demann oswa swiv dosye",
+          "Bezwen èd? Kontakte ONI nan +509 2813-1111 oswa imèl: support@oni.gouv.ht"
+        ],
+        "ctaLabel": "Aksede pòtal ONI",
+        "ctaUrl": "https://oni.gouv.ht",
+        "cta2Label": "Premye enskripsyon ONI",
+        "cta2Url": "https://oni.gouv.ht/inscription"
+      },
+      {
+        "icon": "📘",
+        "title": "PASPÒ",
+        "color": "#1d4ed8",
+        "bg": "#dbeafe",
+        "headline": "Mande oswa renouvle paspò ayisyen ou depi aletranje",
+        "intro": "Paspò ayisyen an delivre pa Direksyon Imigrasyon ak Emigrasyon. Depi aletranje, kòmanse epi swiv demann ou an liy via DELIDOC Paspò.",
+        "steps": [
+          "Aksede DELIDOC Paspò (delidoc.gouv.ht/DemandePasseport)",
+          "Kreye yon kont oswa konekte ak NINU ou",
+          "Ranpli fòm demann lan epi telechaje dokiman ou yo",
+          "Peye frè konsila yo an liy epi soumèt dosye ou",
+          "Swiv pwogresyon dosye ou ak nimewo referans DELIDOC ou"
+        ],
+        "ctaLabel": "DELIDOC — Demann / Swiv paspò",
+        "ctaUrl": "https://delidoc.gouv.ht/DemandePasseport",
+        "cta2Label": "Pran randevou nan konsila",
+        "cta2Url": "mailto:consulats@mhave.gouv.ht"
+      },
+      {
+        "icon": "📜",
+        "title": "ACHIV NASYONAL",
+        "color": "#b45309",
+        "bg": "#fef3c7",
+        "headline": "Jwenn akta eta sivil sètifye ou yo",
+        "intro": "Achiv Nasyonal Ayiti konsève epi delivre ekstrè akta eta sivil. Kòm manm dyaspora, ou ka kòmande dokiman ou yo adistans.",
+        "steps": [
+          "Idantifye tip dokiman ou bezwen (nesans, maryaj, desè)",
+          "Voye demann ou nan archives@mhave.gouv.ht ak kopi pyès idantite ou",
+          "Jwenn yon prèv lyen ou ak moun ki konsène an",
+          "Peye frè tretman yo (varye selon akta a)",
+          "Resevwa dokiman sètifye ou nan yon delè 10 a 15 jou travay"
+        ],
+        "ctaLabel": "Mande yon akta eta sivil",
+        "ctaUrl": "mailto:archives@mhave.gouv.ht",
+        "cta2Label": "Telechaje fòm nan",
+        "cta2Url": "mailto:formulaires@mhave.gouv.ht"
+      },
+      {
+        "icon": "⚖️",
+        "title": "LEGALIZASYON",
+        "color": "#047857",
+        "bg": "#d1fae5",
+        "headline": "Fè dokiman ofisyèl ayisyen ou yo legalize oswa apostiye",
+        "intro": "Legalizasyon ak apostiy pèmèt dokiman ayisyen ou yo rekonèt nan yon peyi etranje. MHAVE kòdone pwosedi sa yo ak Ministè Afè Etranjè.",
+        "steps": [
+          "Rasanble dokiman orijinal yo (akta notaryal, diplòm, akta sivil)",
+          "Premye legalize nan Ministè Jistis ayisyen an",
+          "Soumèt nan Ministè Afè Etranjè pou apostiy la",
+          "Si ou aletranje, kontakte konsila ayisyen ki konpetan an",
+          "Delè: 5 a 10 jou travay selon tip dokiman an"
+        ],
+        "ctaLabel": "Mande yon legalizasyon",
+        "ctaUrl": "mailto:legalisation@mhave.gouv.ht",
+        "cta2Label": "Kontakte konsila konpetan an",
+        "cta2Url": "mailto:consulats@mhave.gouv.ht"
+      }
+    ]
+  },
+  "NavPages": {
+    "pages": [
+      null,
+      {
+        "title": "Prezantasyon MHAVE",
+        "color": "#002060",
+        "sections": [
+          {
+            "icon": "",
+            "label": "Misyon ak Vizyon",
+            "content": "MHAVE se entèfas ofisyèl ant gouvènman ayisyen an ak 4 milyon manm dyaspora ki gaye nan plis pase 35 peyi.",
+            "items": [
+              "Ranfòse lyen ant Ayiti ak dyaspora li",
+              "Fasilite aksè ak sèvis Eta a depi aletranje",
+              "Pwomote envèstisman dyaspora an Ayiti",
+              "Pwoteje dwa Ayisyen ki aletranje",
+              "Valorize idantite kiltirèl ayisyen nan lemonn"
+            ]
+          },
+          {
+            "icon": "",
+            "label": "Òganigramm",
+            "content": "MHAVE dirije pa yon Minis epi estrikture nan plizyè direksyon jeneral.",
+            "items": [
+              "Minis — Kathia Verdier",
+              "Direksyon Jeneral Sèvis Konsila",
+              "Direksyon Relasyon ak Dyaspora",
+              "Direksyon Envèstisman ak Devlopman",
+              "Direksyon Administratif ak Finansyè",
+              "Direksyon Kominikasyon"
+            ]
+          },
+          {
+            "icon": "",
+            "label": "Pèsonèl MHAVE",
+            "content": "Plis pase 200 ajan distribye ant sièj la nan Musseau ak reprezantasyon diplomatik yo nan tout lemonn.",
+            "items": [
+              "Sièj santral – Musseau, Pòtoprens",
+              "Reprezantasyon – Miami, Florida, Etazini",
+              "Reprezantasyon – Montréal, Québec, Kanada",
+              "Reprezantasyon – Pari, Frans",
+              "Reprezantasyon – Santo Domingo, Repiblik Dominikèn",
+              "Reprezantasyon – New York, Etazini"
+            ]
+          },
+          {
+            "icon": "",
+            "label": "Kad Legal",
+            "content": "MHAVE fonksyone nan kad Konstitisyon 1987 la ak Direktiv 001/IHSI/2026.",
+            "items": [
+              "Konstitisyon Ayisyen 1987 — Atik 12-1",
+              "Dekrè ki kreye MHAVE",
+              "Direktiv 001/IHSI/2026 — Gouvènans Elektwonik",
+              "Konvansyon Vyèn sou relasyon konsila",
+              "Akò bilateral pou pwoteksyon sitwayen"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Sèvis pou Sitwayen",
+        "color": "#1d4ed8",
+        "sections": [
+          {
+            "icon": "",
+            "label": "Idantite Dijital (NINU/ONI)",
+            "content": "NINU se idantifyan ofisyèl chak sitwayen ayisyen, jere pa ONI.",
+            "items": [
+              "Verifikasyon NINU via DELIDOC ONI",
+              "Premye enskripsyon ONI an liy",
+              "Deklarasyon pèt oswa vòl kat",
+              "Swiv dosye an tan reyèl",
+              "Lyen: delidoc.gouv.ht/doleanceoni/Status"
+            ],
+            "ctaLabel": "Aksede DELIDOC ONI",
+            "ctaUrl": "https://delidoc.gouv.ht/doleanceoni/Status"
+          },
+          {
+            "icon": "",
+            "label": "Paspò — DELIDOC",
+            "content": "Depoze demann paspò ou oswa swiv dosye ou via DELIDOC Paspò.",
+            "items": [
+              "Nouvo demann paspò an liy",
+              "Swiv dosye ak nimewo referans",
+              "Dokiman obligatwa: NINU, akta nesans, foto",
+              "Delè mwayen: 4 a 8 semèn",
+              "Lyen: delidoc.gouv.ht/DemandePasseport"
+            ],
+            "ctaLabel": "DELIDOC — Paspò",
+            "ctaUrl": "https://delidoc.gouv.ht/DemandePasseport"
+          },
+          {
+            "icon": "",
+            "label": "iKat — Fòm Rive",
+            "content": "Fòm iKat la obligatwa pou tout moun ki antre Ayiti.",
+            "items": [
+              "Dwe ranpli anvan ou rive Ayiti",
+              "Kolekte enfòmasyon pou otorite imigrasyon",
+              "Disponib an liy 24è/24",
+              "Gratis epi rapid (mwens pase 5 minit)",
+              "Lyen: delidoc.gouv.ht/ikat/fr"
+            ],
+            "ctaLabel": "Ranpli fòm iKat la",
+            "ctaUrl": "https://delidoc.gouv.ht/ikat/fr"
+          },
+          {
+            "icon": "",
+            "label": "Achiv & Legalizasyon",
+            "content": "Ekstrè akta eta sivil sètifye ak legalizasyon dokiman ofisyèl.",
+            "items": [
+              "Ekstrè akta nesans, maryaj, desè",
+              "Apostiy ak legalizasyon konsila",
+              "Delè: 10–15 jou travay",
+              "Kontak: archives@mhave.gouv.ht",
+              "Rekonètans diplòm ayisyen"
+            ],
+            "ctaLabel": "Mande yon akta sivil",
+            "ctaUrl": "mailto:archives@mhave.gouv.ht"
+          }
+        ]
+      },
+      {
+        "title": "Pwosedi Administratif",
+        "color": "#047857",
+        "sections": [
+          {
+            "icon": "",
+            "label": "Opòtinite envèstisman",
+            "content": "Ayiti ofri opòtinite nan agro-endistri, touris, enèji renouvlab ak nimerik.",
+            "items": [
+              "Sektè priyorite idantifye pa Leta",
+              "Egzonerasyon fiskal pou dyaspora",
+              "Akòmpanyman jiridik ak administratif",
+              "Rezo patnè lokal ak entènasyonal",
+              "Sant ap pou antreprenè dyaspora"
+            ],
+            "ctaLabel": "Eksplore opòtinite yo",
+            "ctaUrl": "mailto:investissement@mhave.gouv.ht"
+          },
+          {
+            "icon": "",
+            "label": "Fòm an liy",
+            "content": "Telechaje oswa ranpli fòm administratif MHAVE ak enstitisyon patnè yo.",
+            "items": [
+              "Fòm demann akta eta sivil",
+              "Demann legalizasyon dokiman",
+              "Fòm plent oswa reklamasyon",
+              "Enskripsyon nan rejis dyaspora",
+              "Demann sètifika rezidans aletranje"
+            ],
+            "ctaLabel": "Aksede nan fòm yo",
+            "ctaUrl": "mailto:formulaires@mhave.gouv.ht"
+          },
+          {
+            "icon": "",
+            "label": "Pwosedi konsila",
+            "content": "Enfòmasyon sou demann nan konsila ayisyen nan peyi rezidans ou.",
+            "items": [
+              "Jwenn konsila ki pi pre a",
+              "Pran randevou an liy",
+              "Dokiman obligatwa pou chak sèvis",
+              "Pri konsila an vigè 2026",
+              "Sèvis ijans konsila"
+            ],
+            "ctaLabel": "Jwenn yon konsila",
+            "ctaUrl": "mailto:consulats@mhave.gouv.ht"
+          }
+        ]
+      },
+      {
+        "title": "Idantite Kiltirèl Ayisyen",
+        "color": "#7c3aed",
+        "sections": [
+          {
+            "icon": "",
+            "label": "Patrimwa & Tradisyon",
+            "content": "Ayiti se yon nasyon rich ak yon kilti milenè, premye Repiblik nwa lib lemonn.",
+            "items": [
+              "Kanaval nasyonal — fevriye chak ane",
+              "Fèt Drapo — 18 me",
+              "Endepandans 1804 — 1e janvye",
+              "Vodou — patrimwa UNESCO",
+              "Pentì naif ayisyen",
+              "Mizik: konpa, rasin, twoubadou"
+            ]
+          },
+          {
+            "icon": "",
+            "label": "Lang kreyòl",
+            "content": "Kreyòl ayisyen (kreyòl ayisyen) se youn nan de lang ofisyèl Ayiti.",
+            "items": [
+              "Kou kreyòl an liy pou dyaspora",
+              "Diksyonè ofisyèl kreyòl–franse",
+              "Resous pedagogik pou timoun",
+              "Evènman kiltirèl nan dyaspora",
+              "Sant kiltirèl ayisyen aletranje"
+            ]
+          },
+          {
+            "icon": "",
+            "label": "Gastwonomi ayisyen",
+            "content": "Griot, diri ak djon-djon, akra, tassot — de save ki vwayaje ak dyaspora.",
+            "items": [
+              "Resèt tradisyonèl ayisyen",
+              "Pwodui ayisyen ekspòte",
+              "Restoran ayisyen nan lemonn",
+              "Festival gastwonomik dyaspora",
+              "Pwomosyon kizin ayisyen nan UNESCO"
+            ]
+          }
+        ]
+      },
+      null,
+      {
+        "title": "Kontakte Nou",
+        "color": "#B91C1C",
+        "sections": [
+          {
+            "icon": "",
+            "label": "Sièj MHAVE",
+            "content": "Sièj la sitiye nan Musseau, Pòtoprens. Disponib lendi rive vandredi 8h00 a 16h00.",
+            "items": [
+              "Adrès: Wout Musseau, Pòtoprens",
+              "Telefòn: +509 2813-0000",
+              "Imèl: contact@mhave.gouv.ht",
+              "Orè: Len–Van, 08h00–16h00 HAT",
+              "Aksè GPS: 18.5558° N, 72.3348° W"
+            ],
+            "ctaLabel": "Voye yon imèl",
+            "ctaUrl": "mailto:contact@mhave.gouv.ht"
+          },
+          {
+            "icon": "",
+            "label": "Reperwa konsila",
+            "content": "MHAVE reprezante nan plis pase 20 peyi.",
+            "items": [
+              "Miami (Etazini) — +1 305-859-4670",
+              "New York (Etazini) — +1 212-477-6350",
+              "Montréal (Kanada) — +1 514-499-1919",
+              "Pari (Frans) — +33 1 47 63 47 78",
+              "Santo Domingo (RD) — +1 809-686-5778",
+              "Jenv (Swis) — +41 22 716 00 00"
+            ],
+            "ctaLabel": "Wè tout konsila yo",
+            "ctaUrl": "mailto:consulats@mhave.gouv.ht"
+          },
+          {
+            "icon": "",
+            "label": "MHAVE Koute",
+            "content": "Sant apèl nou an resevwa dòleyans ou, sijesyon ak demann enfòmasyon.",
+            "items": [
+              "Sant apèl: +509 2813-0001",
+              "WhatsApp: +509 3700-0000",
+              "Imèl: ecoute@mhave.gouv.ht",
+              "Fòm an liy 24è/24",
+              "Delè repons: 48–72 è travay"
+            ],
+            "ctaLabel": "Soumèt yon demann",
+            "ctaUrl": "mailto:ecoute@mhave.gouv.ht"
+          }
+        ],
+        "ctaLabel": "Soumèt yon demann",
+        "ctaUrl": "mailto:ecoute@mhave.gouv.ht"
+      },
+      {
+        "color": "#374151",
+        "label": "PWOSEDI MHAVE",
+        "icon": "",
+        "headline": "Gid konplè pwosedi administratif MHAVE yo",
+        "intro": "Fòm pou telechaje, delè tretman, dokiman obligatwa ak kontakt sèvis konpetan pou chak pwosedi administratif.",
+        "sections": [
+          {
+            "icon": "",
+            "title": "Fòm disponib",
+            "items": [
+              "Demann akta eta sivil (PDF)",
+              "Demann legalizasyon dokiman (PDF)",
+              "Enskripsyon nan rejis dyaspora (an liy)",
+              "Fòm plent oswa reklamasyon (PDF)",
+              "Demann sètifika konsila (an liy)"
+            ]
+          },
+          {
+            "icon": "",
+            "title": "Delè tretman",
+            "items": [
+              "Akta eta sivil: 10 a 15 jou travay",
+              "Legalizasyon / apostiy: 5 a 10 jou travay",
+              "Enskripsyon konsila: imedya an liy",
+              "Paspò DELIDOC: 4 a 8 semèn",
+              "Repons MHAVE Koute: 48 a 72 è"
+            ]
+          },
+          {
+            "icon": "",
+            "title": "Voye dosye yo",
+            "items": [
+              "Pa imèl: formulaires@mhave.gouv.ht",
+              "Pa lapòs: Wout Musseau, Pòtoprens",
+              "An pèsòn: konsila ayisyen ki pi pre ou",
+              "An liy via pòtal DELIDOC",
+              "Swiv WhatsApp: +509 3700-0000"
+            ]
+          }
+        ],
+        "ctaLabel": "Telechaje fòm yo",
+        "ctaUrl": "mailto:formulaires@mhave.gouv.ht"
+      }
+    ]
+  },
+  "TileModals": {
+    "items": [
+      {
+        "color": "#1d4ed8",
+        "label": "VIV ALETRANJE",
+        "icon": "🏠",
+        "headline": "Tout sa ou bezwen konnen pou viv aletranje kòm Ayisyen",
+        "intro": "Dè milyon Ayisyen ap viv aletranje. MHAVE se pwen kontakt ofisyèl ou pou pwoteje dwa ou, fasilite pwosedi ou yo epi kenbe lyen ou ak Ayiti.",
+        "sections": [
+          {
+            "icon": "📋",
+            "title": "Fòmalite administratif",
+            "items": [
+              "Renouvèlman paspò via DELIDOC",
+              "Enskripsyon nan rejis konsila dyaspora",
+              "Pwokirasyon ak akta notaryal a distans",
+              "Deklarasyon rezidans aletranje",
+              "Dokiman eta sivil sètifye a distans"
+            ]
+          },
+          {
+            "icon": "⚖️",
+            "title": "Dwa ak pwoteksyon",
+            "items": [
+              "Pwoteksyon konsila an ka ijans",
+              "Asistans jiridik pou rezon sèvis",
+              "Dwa siksesyon sou byen an Ayiti",
+              "Aksè nan sèvis sosyal ayisyen",
+              "Ijans: +509 2813-0000 (24è/24)"
+            ]
+          },
+          {
+            "icon": "🔗",
+            "title": "Reste konekte ak Ayiti",
+            "items": [
+              "Pòtal e-gov MHAVE — sèvis an liy",
+              "Biltèn mwa dyaspora",
+              "Gwoup kominote ofisyèl MHAVE",
+              "Evènman kiltirèl nan peyi ou",
+              "Pwogram retou volontè an Ayiti"
+            ]
+          }
+        ],
+        "ctaLabel": "Enskri nan rejis konsila",
+        "ctaUrl": "mailto:registre@mhave.gouv.ht"
+      },
+      {
+        "color": "#0f766e",
+        "label": "VINI AN AYITI",
+        "icon": "✈️",
+        "headline": "Prepare vwayaj ou oswa retou ou an Ayiti",
+        "intro": "Kit ou vizite Ayiti oswa ou panse yon retou definitif, MHAVE akonpaye ou nan tout pwosedi imigrasyon, ladwàn ak enstalasyon ou.",
+        "sections": [
+          {
+            "icon": "🛂",
+            "title": "iKat — Fòm Dijital Rive",
+            "items": [
+              "Fòm obligatwa pou TOUT moun ki antre Ayiti",
+              "Dwe ranpli an liy anvan ou rive",
+              "Gratis epi rapid (mwens pase 5 minit)",
+              "Disponib nan: delidoc.gouv.ht/ikat/fr",
+              "Kolekte enfòmasyon pou otorite imigrasyon"
+            ]
+          },
+          {
+            "icon": "🧳",
+            "title": "Ladwàn & Bagay",
+            "items": [
+              "Franchiz ladwàn dyaspora: jiska $800 USD",
+              "Enpòtasyon machin — pwosedi ak taks",
+              "Voye machandiz depi aletranje (barrel)",
+              "Deklarasyon lajan > $10 000 USD",
+              "Kontak AGD: douanes.gouv.ht"
+            ]
+          },
+          {
+            "icon": "🏡",
+            "title": "Enstalasyon & Retou",
+            "items": [
+              "Pwogram akonpayman retou MHAVE",
+              "Lojman tanporè pou dyaspora ki retounen",
+              "Aksè nan sèvis sante piblik",
+              "Enskripsyon lekòl pou timoun ki retounen",
+              "Rezo sipò pou reyènsèsyon pwofesyonèl"
+            ]
+          }
+        ],
+        "ctaLabel": "Prepare vwayaj mwen an Ayiti",
+        "ctaUrl": "https://immigration.gouv.ht",
+        "cta2Label": "Ranpli fòm iKat la",
+        "cta2Url": "https://delidoc.gouv.ht/ikat/fr"
+      },
+      {
+        "color": "#b45309",
+        "label": "ENVESTI AN AYITI",
+        "icon": "💰",
+        "headline": "Envesti nan lavni Ayiti ak sipò MHAVE",
+        "intro": "Dyaspora ayisyen an reprezante plis pase 3,8 milya dola transfè chak ane. MHAVE akonpaye ou pou transfòme fòs sa a an envèstisman dirab.",
+        "sections": [
+          {
+            "icon": "🏭",
+            "title": "Sektè priyorite",
+            "items": [
+              "Agro-endistri & transfòmasyon manje",
+              "Touris & otèl",
+              "Enèji renouvlab (solèy, van)",
+              "Sèvis nimerik & fintech",
+              "Teksil & manifakti",
+              "Edikasyon & sante prive"
+            ]
+          },
+          {
+            "icon": "💼",
+            "title": "Ankourajman fiskal",
+            "items": [
+              "Egzansyon dwa ladwàn sou ekipman",
+              "Konje fiskal 5 a 15 an selon sektè",
+              "Rapatriyasyon lib pwofi",
+              "Aksè nan zòn fran endistryèl",
+              "Pwoteksyon envèstisman pa lalwa"
+            ]
+          },
+          {
+            "icon": "🤝",
+            "title": "Akonpayman MHAVE",
+            "items": [
+              "Mete an relasyon ak patnè lokal",
+              "Asistans nan pwosedi legal yo",
+              "Aksè nan finansman (BRH, SOFIHDES)",
+              "Rezo antreprenè dyaspora",
+              "Atelye envèstisman MHAVE"
+            ]
+          }
+        ],
+        "ctaLabel": "Soumèt yon pwojè envèstisman",
+        "ctaUrl": "mailto:investissement@mhave.gouv.ht"
+      },
+      {
+        "color": "#7c3aed",
+        "label": "MHAVE KOUTE",
+        "icon": "👂",
+        "headline": "MHAVE ap koute dyaspora ayisyen an",
+        "intro": "MHAVE Koute se sant nou ki dedye pou resevwa dòleyans, plent, sijesyon ak demann enfòmasyon. Vwa ou enpòtan.",
+        "sections": [
+          {
+            "icon": "📞",
+            "title": "Kontakte nou",
+            "items": [
+              "Sant apèl: +509 2813-0001 (Len–Van 8è–16è)",
+              "WhatsApp: +509 3700-0000",
+              "Imèl: ecoute@mhave.gouv.ht",
+              "Fòm an liy: disponib 24è/24",
+              "Delè repons garanti: 48 a 72 è travay"
+            ]
+          },
+          {
+            "icon": "📝",
+            "title": "Tip demann yo",
+            "items": [
+              "Dòleyans konsènan sèvis konsila yo",
+              "Rapòte pwoblèm administratif",
+              "Sijesyon amelyorasyon sèvis yo",
+              "Demann enfòmasyon sou pwosedi",
+              "Ijans konsila (paspò, arestasyon, desè)"
+            ]
+          },
+          {
+            "icon": "📊",
+            "title": "Angajman nou",
+            "items": [
+              "100% mesaj yo resevwa yon repons",
+              "Rapò trimèstyèl piblik dòleyans yo",
+              "Amelyorasyon kontinyèl baze sou kòmantè ou yo",
+              "Pwoteksyon vi prive RGPD",
+              "Konfòmite Direktiv 001/IHSI/2026"
+            ]
+          }
+        ],
+        "ctaLabel": "Soumèt yon demann",
+        "ctaUrl": "mailto:ecoute@mhave.gouv.ht"
+      },
+      {
+        "color": "#374151",
+        "label": "PWOSEDI MHAVE",
+        "icon": "💼",
+        "headline": "Gid konplè pwosedi administratif MHAVE yo",
+        "intro": "Fòm pou telechaje, delè tretman, dokiman obligatwa ak kontakt sèvis konpetan pou chak pwosedi administratif.",
+        "sections": [
+          {
+            "icon": "📄",
+            "title": "Fòm disponib",
+            "items": [
+              "Demann akta eta sivil (PDF)",
+              "Demann legalizasyon dokiman (PDF)",
+              "Enskripsyon nan rejis dyaspora (an liy)",
+              "Fòm plent oswa reklamasyon (PDF)",
+              "Demann sètifika konsila (an liy)"
+            ]
+          },
+          {
+            "icon": "⏱️",
+            "title": "Delè tretman",
+            "items": [
+              "Akta eta sivil: 10 a 15 jou travay",
+              "Legalizasyon / apostiy: 5 a 10 jou travay",
+              "Enskripsyon konsila: imedya an liy",
+              "Paspò DELIDOC: 4 a 8 semèn",
+              "Repons MHAVE Koute: 48 a 72 è"
+            ]
+          },
+          {
+            "icon": "📬",
+            "title": "Voye dosye yo",
+            "items": [
+              "Pa imèl: formulaires@mhave.gouv.ht",
+              "Pa lapòs: Wout Musseau, Pòtoprens",
+              "An pèsòn: konsila ayisyen ki pi pre ou",
+              "An liy via pòtal DELIDOC",
+              "Swiv WhatsApp: +509 3700-0000"
+            ]
+          }
+        ],
+        "ctaLabel": "Telechaje fòm yo",
+        "ctaUrl": "mailto:formulaires@mhave.gouv.ht"
+      }
+    ]
+  },
+  "Footer": {
+    "ministryName": "Ministè Ayisyen",
+    "ministrySubtitle": "Kap Viv Aletranje",
+    "acronym": "MHAVE",
+    "description": "Pòtal ofisyèl pou dyaspora ayisyen an : sèvis Leta, pwosedi administratif ak resous dokimantè.",
+    "navigationTitle": "Navigasyon",
+    "navItems": ["Akèy", "Prezantasyon MHAVE", "Sèvis", "Pwosedi admin", "Idantite kiltirèl", "Medyatek", "Kontak"],
+    "servicesTitle": "Sèvis an liy",
+    "serviceItems": ["Idantite nimerik (ONI)", "Paspò", "Achiv nasyonal", "Legalizasyon"],
+    "copyright": "MHAVE — Ministè Ayisyen Kap Viv Aletranje. Done ki nan enfrastrikti souvren, konfòme ak Direktiv 001/HSJ/2026.",
+    "infrastructureButton": "🔒 Enfrakstrikti Bare Metal Private Cloud"
   }
 }

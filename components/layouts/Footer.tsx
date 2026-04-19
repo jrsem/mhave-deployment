@@ -1,11 +1,15 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
 import { LOGO } from "@/app/[locale]/page";
 
 
 export default function Footer() {
+  const t = useTranslations("Footer");
+  const navItems = t.raw("navItems") as string[];
+  const serviceItems = t.raw("serviceItems") as string[];
   return (
     <footer
       style={{
@@ -63,8 +67,8 @@ export default function Footer() {
                     margin: 0,
                   }}
                 >
-                  Ministère des Haïtiens <br />
-                  Vivant à l'Étranger
+                  {t("ministryName")} <br />
+                  {t("ministrySubtitle")}
                 </h3>
 
                 <span
@@ -74,7 +78,7 @@ export default function Footer() {
                     fontWeight: 600,
                   }}
                 >
-                  MHAVE
+                  {t("acronym")}
                 </span>
               </div>
             </div>
@@ -86,8 +90,7 @@ export default function Footer() {
                 lineHeight: "1.6",
               }}
             >
-              Portail officiel pour la diaspora haïtienne : services de l'État,
-              démarches administratives et ressources documentaires.
+              {t("description")}
             </p>
           </div>
 
@@ -104,19 +107,11 @@ export default function Footer() {
                 paddingBottom: "8px",
               }}
             >
-              Navigation
+              {t("navigationTitle")}
             </h4>
 
             <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
-              {[
-                "Accueil",
-                "Présentation MHAVE",
-                "Services",
-                "Démarches admin",
-                "Identité culturelle",
-                "Médiathèque",
-                "Contact",
-              ].map((item) => (
+              {navItems.map((item) => (
                 <li key={item} style={{ marginBottom: "8px" }}>
                   <Link
                     href="#"
@@ -146,16 +141,11 @@ export default function Footer() {
                 paddingBottom: "8px",
               }}
             >
-              Services en ligne
+              {t("servicesTitle")}
             </h4>
 
             <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
-              {[
-                "Identité digitale (ONI)",
-                "Passeports",
-                "Archives nationales",
-                "Légalisation",
-              ].map((item) => (
+              {serviceItems.map((item) => (
                 <li key={item} style={{ marginBottom: "8px" }}>
                   <Link
                     href="#"
@@ -230,11 +220,7 @@ export default function Footer() {
               maxWidth: "600px",
             }}
           >
-            <span style={{ fontWeight: 600, color: "white" }}>
-              MHAVE
-            </span>{" "}
-            — Ministère des Haïtiens Vivant à l'Étranger. Données hébergées sur
-            infrastructure souveraine, conformément à la Directive 001/HSJ/2026.
+            {t("copyright")}
           </p>
 
           <button
@@ -251,7 +237,7 @@ export default function Footer() {
               cursor: "pointer",
             }}
           >
-            🔒 Enfrekstriktè Bare Metal Private Cloud
+            {t("infrastructureButton")}
           </button>
         </div>
       </div>

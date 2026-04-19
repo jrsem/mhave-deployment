@@ -1,5 +1,628 @@
 {
   "HeroSection": {
-    "title": "Su Vínculo con la Tierra Natal."
+    "title": "Su vínculo con la Tierra Natal.",
+    "sub": "Acceda a los servicios del Estado haitiano de forma segura desde el extranjero. Una infraestructura soberana para una diáspora conectada.",
+    "ph": "Buscar un servicio, un formulario, un trámite…",
+    "btn": "BUSCAR",
+    "svcTitle": "SERVICIOS AL CIUDADANO",
+    "oniLabel": "NÚMERO DE IDENTIFICACIÓN ÚNICO (NINU)",
+    "oniBtn": "VERIFICAR",
+    "sidebar": ["COMPARTIR", "CHAT", "SUGERENCIAS", "IMPRIMIR"],
+    "chatTitle": "💬 Asistente MHAVE",
+    "chatGreet": "¡Hola! Soy el asistente virtual del MHAVE. ¿En qué puedo ayudarle?",
+    "chatPh": "Haga una pregunta…",
+    "chatSend": "↗",
+    "suggestTitle": "💡 Enviar una sugerencia",
+    "suggestSend": "📧 Enviar por correo",
+    "suggestTo": "Para",
+    "suggestSubj": "Asunto",
+    "suggestBody": "Mensaje",
+    "suggestPh": "Su sugerencia…",
+    "shareCopied": "¡Enlace copiado!"
+  },
+  "Navigation": {
+    "labels": ["INICIO", "PRESENTACIÓN MHAVE", "SERVICIOS", "TRÁMITES ADMIN.", "IDENTIDAD CULTURAL", "MEDIATECA", "CONTACTO"]
+  },
+  "Tiles": {
+    "items": [
+      { "label": "VIVIR EN EL EXTRANJERO", "icon": "🏠" },
+      { "label": "VISITAR HAITÍ", "icon": "✈️" },
+      { "label": "INVERTIR EN HAITÍ", "icon": "💰" },
+      { "label": "MHAVE ESCUCHA", "icon": "👂" },
+      { "label": "PROCEDIMIENTOS MHAVE", "icon": "💼" }
+    ]
+  },
+  "Search": {
+    "items": [
+      { "icon": "🪪", "title": "Verificar su NINU", "cat": "Identidad", "desc": "Consulte el estado de su NINU a través del portal en línea DELIDOC ONI." },
+      { "icon": "📘", "title": "Renovación de pasaporte", "cat": "Documentos", "desc": "Presente su solicitud a través de DELIDOC Pasaporte desde el extranjero." },
+      { "icon": "✈️", "title": "Formulario iKat — Llegada a Haití", "cat": "Inmigración", "desc": "Complete el formulario digital de llegada obligatorio antes de entrar a Haití." },
+      { "icon": "📜", "title": "Extracto de acta de nacimiento", "cat": "Archivos", "desc": "Solicite su extracto certificado en los Archivos Nacionales de Haití." },
+      { "icon": "💰", "title": "Oportunidades de inversión", "cat": "Economía", "desc": "Sectores prioritarios e incentivos fiscales para invertir en Haití." },
+      { "icon": "👂", "title": "MHAVE Escucha", "cat": "Contacto", "desc": "Envíe sus quejas o sugerencias al equipo del MHAVE." }
+    ]
+  },
+  "Services": {
+    "items": [
+      {
+        "icon": "🪪",
+        "title": "IDENTIDAD DIGITAL",
+        "color": "#6d28d9",
+        "bg": "#ede9fe",
+        "headline": "Verifique y gestione su Identidad Digital haitiana",
+        "intro": "El Número de Identificación Único (NINU) es el identificador oficial de cada ciudadano haitiano, emitido por la Oficina Nacional de Identificación (ONI). Dos plataformas oficiales le permiten gestionar su identidad en línea.",
+        "steps": [
+          "Verifique su NINU (10 dígitos) a través de DELIDOC ONI — seguimiento de estado en tiempo real",
+          "¿Tarjeta perdida o robada? Presente su queja en el portal DELIDOC ONI",
+          "¿Entra a Haití? Complete el formulario iKat (Formulario Digital de Llegada) antes de su arribo",
+          "Para una solicitud de pasaporte, acceda a DELIDOC Pasaporte — nueva solicitud o seguimiento de expediente",
+          "¿Necesita ayuda? Contacte a la ONI al +509 2813-1111 o por correo: support@oni.gouv.ht"
+        ],
+        "ctaLabel": "Acceder al portal ONI",
+        "ctaUrl": "https://oni.gouv.ht",
+        "cta2Label": "Primer registro ONI",
+        "cta2Url": "https://oni.gouv.ht/inscription"
+      },
+      {
+        "icon": "📘",
+        "title": "PASAPORTES",
+        "color": "#1d4ed8",
+        "bg": "#dbeafe",
+        "headline": "Solicite o renueve su pasaporte haitiano desde el extranjero",
+        "intro": "El pasaporte haitiano es emitido por la Dirección de Inmigración y Emigración. Desde el extranjero, inicie y haga seguimiento de su solicitud en línea a través de DELIDOC Pasaporte.",
+        "steps": [
+          "Acceda a DELIDOC Pasaporte (delidoc.gouv.ht/DemandePasseport)",
+          "Cree una cuenta o inicie sesión con su NINU",
+          "Complete el formulario de solicitud y cargue sus documentos",
+          "Pague las tasas consulares en línea y envíe su expediente",
+          "Haga seguimiento del avance de su expediente con el número de referencia DELIDOC"
+        ],
+        "ctaLabel": "DELIDOC — Solicitud / Seguimiento de pasaporte",
+        "ctaUrl": "https://delidoc.gouv.ht/DemandePasseport",
+        "cta2Label": "Reservar una cita en el consulado",
+        "cta2Url": "mailto:consulats@mhave.gouv.ht"
+      },
+      {
+        "icon": "📜",
+        "title": "ARCHIVOS NACIONALES",
+        "color": "#b45309",
+        "bg": "#fef3c7",
+        "headline": "Obtenga sus actas de estado civil certificadas",
+        "intro": "Los Archivos Nacionales de Haití conservan y emiten extractos de actas de estado civil. Como miembro de la diáspora, puede solicitar sus documentos a distancia.",
+        "steps": [
+          "Identifique el tipo de documento necesario (nacimiento, matrimonio, defunción)",
+          "Envíe su solicitud a archives@mhave.gouv.ht con copia de su documento de identidad",
+          "Adjunte un comprobante de vínculo con la persona concernida",
+          "Pague las tasas de procesamiento (variables según el acta)",
+          "Reciba su documento certificado en un plazo de 10 a 15 días hábiles"
+        ],
+        "ctaLabel": "Solicitar un acta de estado civil",
+        "ctaUrl": "mailto:archives@mhave.gouv.ht",
+        "cta2Label": "Descargar el formulario",
+        "cta2Url": "mailto:formulaires@mhave.gouv.ht"
+      },
+      {
+        "icon": "⚖️",
+        "title": "LEGALIZACIÓN",
+        "color": "#047857",
+        "bg": "#d1fae5",
+        "headline": "Legalice o apostille sus documentos oficiales haitianos",
+        "intro": "La legalización y la apostilla permiten que sus documentos haitianos sean reconocidos en un país extranjero. El MHAVE coordina estos procedimientos con el Ministerio de Relaciones Exteriores.",
+        "steps": [
+          "Reúna los documentos originales (actas notariales, títulos, actas civiles)",
+          "Legalice primero ante el Ministerio de Justicia haitiano",
+          "Presente al Ministerio de Relaciones Exteriores para la apostilla",
+          "Si se encuentra en el extranjero, contacte al consulado haitiano competente",
+          "Plazo: de 5 a 10 días hábiles según el tipo de documento"
+        ],
+        "ctaLabel": "Solicitar una legalización",
+        "ctaUrl": "mailto:legalisation@mhave.gouv.ht",
+        "cta2Label": "Contactar al consulado competente",
+        "cta2Url": "mailto:consulats@mhave.gouv.ht"
+      }
+    ]
+  },
+  "NavPages": {
+    "pages": [
+      null,
+      {
+        "title": "Presentación del MHAVE",
+        "color": "#002060",
+        "sections": [
+          {
+            "icon": "🎯",
+            "label": "Misión y Visión",
+            "content": "El MHAVE es la interfaz oficial entre el gobierno haitiano y los 4 millones de miembros de la diáspora distribuidos en más de 35 países.",
+            "items": [
+              "Fortalecer los vínculos entre Haití y su diáspora",
+              "Facilitar el acceso a los servicios del Estado desde el extranjero",
+              "Promover las inversiones de la diáspora en Haití",
+              "Proteger los derechos de los haitianos en el exterior",
+              "Valorizar la identidad cultural haitiana en el mundo"
+            ]
+          },
+          {
+            "icon": "🏛️",
+            "label": "Organigrama",
+            "content": "El MHAVE es dirigido por una Ministra y estructurado en varias direcciones generales.",
+            "items": [
+              "Ministra — Kathia Verdier",
+              "Dirección General de Servicios Consulares",
+              "Dirección de Relaciones con la Diáspora",
+              "Dirección de Inversiones y Desarrollo",
+              "Dirección Administrativa y Financiera",
+              "Dirección de Comunicación"
+            ]
+          },
+          {
+            "icon": "👥",
+            "label": "Personal MHAVE",
+            "content": "Más de 200 agentes distribuidos entre la sede en Musseau y las representaciones diplomáticas en todo el mundo.",
+            "items": [
+              "Sede central – Musseau, Puerto Príncipe",
+              "Representación – Miami, Florida, EE. UU.",
+              "Representación – Montreal, Quebec, Canadá",
+              "Representación – París, Francia",
+              "Representación – Santo Domingo, R.D.",
+              "Representación – Nueva York, EE. UU."
+            ]
+          },
+          {
+            "icon": "⚖️",
+            "label": "Marco legal",
+            "content": "El MHAVE opera en el marco de la Constitución de 1987 y la Directiva 001/IHSI/2026.",
+            "items": [
+              "Constitución haitiana de 1987 — Artículos 12-1",
+              "Decreto de creación del MHAVE",
+              "Directiva 001/IHSI/2026 — Gobernanza Electrónica",
+              "Convención de Viena sobre relaciones consulares",
+              "Acuerdos bilaterales de protección de nacionales"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Servicios para ciudadanos",
+        "color": "#1d4ed8",
+        "sections": [
+          {
+            "icon": "🪪",
+            "label": "Identidad Digital (NINU/ONI)",
+            "content": "El NINU es el identificador oficial de cada ciudadano haitiano, gestionado por la ONI.",
+            "items": [
+              "Verificación NINU a través de DELIDOC ONI",
+              "Primera inscripción ONI en línea",
+              "Declaración de pérdida o robo de tarjeta",
+              "Seguimiento de expediente en tiempo real",
+              "Enlace: delidoc.gouv.ht/doleanceoni/Status"
+            ],
+            "ctaLabel": "Acceder a DELIDOC ONI",
+            "ctaUrl": "https://delidoc.gouv.ht/doleanceoni/Status"
+          },
+          {
+            "icon": "📘",
+            "label": "Pasaportes — DELIDOC",
+            "content": "Presente su solicitud de pasaporte o siga su expediente a través de DELIDOC Pasaporte.",
+            "items": [
+              "Nueva solicitud de pasaporte en línea",
+              "Seguimiento de expediente con número de referencia",
+              "Documentos requeridos: NINU, acta de nacimiento, foto",
+              "Plazo medio: 4 a 8 semanas",
+              "Enlace: delidoc.gouv.ht/DemandePasseport"
+            ],
+            "ctaLabel": "DELIDOC — Pasaporte",
+            "ctaUrl": "https://delidoc.gouv.ht/DemandePasseport"
+          },
+          {
+            "icon": "✈️",
+            "label": "iKat — Formulario de Llegada",
+            "content": "El formulario iKat es obligatorio para toda persona que ingrese a Haití.",
+            "items": [
+              "Debe completarse antes de su llegada a Haití",
+              "Recopila información para las autoridades de inmigración",
+              "Disponible en línea 24 horas",
+              "Gratuito y rápido (menos de 5 minutos)",
+              "Enlace: delidoc.gouv.ht/ikat/fr"
+            ],
+            "ctaLabel": "Completar el formulario iKat",
+            "ctaUrl": "https://delidoc.gouv.ht/ikat/fr"
+          },
+          {
+            "icon": "📜",
+            "label": "Archivos y Legalización",
+            "content": "Extractos certificados de actas civiles y legalización de documentos oficiales.",
+            "items": [
+              "Extracto de acta de nacimiento, matrimonio, defunción",
+              "Apostilla y legalización consular",
+              "Plazo: 10 a 15 días hábiles",
+              "Contacto: archives@mhave.gouv.ht",
+              "Reconocimiento de diplomas haitianos"
+            ],
+            "ctaLabel": "Solicitar un acta civil",
+            "ctaUrl": "mailto:archives@mhave.gouv.ht"
+          }
+        ]
+      },
+      {
+        "title": "Trámites Administrativos",
+        "color": "#047857",
+        "sections": [
+          {
+            "icon": "💰",
+            "label": "Oportunidades de inversión",
+            "content": "Haití ofrece oportunidades en la agroindustria, el turismo, la energía renovable y lo digital.",
+            "items": [
+              "Sectores prioritarios identificados por el Estado",
+              "Exoneraciones fiscales para la diáspora",
+              "Acompañamiento jurídico y administrativo",
+              "Red de socios locales e internacionales",
+              "Centro de apoyo a emprendedores de la diáspora"
+            ],
+            "ctaLabel": "Explorar las oportunidades",
+            "ctaUrl": "mailto:investissement@mhave.gouv.ht"
+          },
+          {
+            "icon": "📋",
+            "label": "Formularios en línea",
+            "content": "Descargue o complete los formularios administrativos del MHAVE y de las instituciones asociadas.",
+            "items": [
+              "Formulario de solicitud de acta de estado civil",
+              "Solicitud de legalización de documentos",
+              "Formulario de queja o reclamación",
+              "Inscripción en el registro de la diáspora",
+              "Solicitud de certificado de residencia en el extranjero"
+            ],
+            "ctaLabel": "Acceder a los formularios",
+            "ctaUrl": "mailto:formulaires@mhave.gouv.ht"
+          },
+          {
+            "icon": "🏛️",
+            "label": "Trámites consulares",
+            "content": "Información sobre los trámites ante los consulados haitianos en su país de residencia.",
+            "items": [
+              "Encontrar el consulado más cercano",
+              "Toma de citas en línea",
+              "Documentos requeridos según el tipo de servicio",
+              "Tarifas consulares vigentes 2026",
+              "Servicios de emergencia consular"
+            ],
+            "ctaLabel": "Encontrar un consulado",
+            "ctaUrl": "mailto:consulats@mhave.gouv.ht"
+          }
+        ]
+      },
+      {
+        "title": "Identidad Cultural Haitiana",
+        "color": "#7c3aed",
+        "sections": [
+          {
+            "icon": "🎭",
+            "label": "Patrimonio y Tradiciones",
+            "content": "Haití es una nación rica en una cultura milenaria, primera República negra libre del mundo.",
+            "items": [
+              "Carnaval nacional — febrero cada año",
+              "Fiesta de la Bandera — 18 de mayo",
+              "Independencia 1804 — 1 de enero",
+              "El vudú — patrimonio de la UNESCO",
+              "La pintura naïf haitiana",
+              "La música: kompa, rasin, twoubadou"
+            ]
+          },
+          {
+            "icon": "🗣️",
+            "label": "Lengua criolla",
+            "content": "El criollo haitiano (kreyòl ayisyen) es uno de los dos idiomas oficiales de Haití.",
+            "items": [
+              "Cursos de criollo en línea para la diáspora",
+              "Diccionario oficial criollo–francés",
+              "Recursos pedagógicos para niños",
+              "Eventos culturales en la diáspora",
+              "Centros culturales haitianos en el extranjero"
+            ]
+          },
+          {
+            "icon": "🍽️",
+            "label": "Gastronomía haitiana",
+            "content": "Griot, diri ak djon-djon, accra, tassot — sabores que viajan con la diáspora.",
+            "items": [
+              "Recetas tradicionales haitianas",
+              "Productos haitianos exportados",
+              "Restaurantes haitianos en el mundo",
+              "Festivales gastronómicos de la diáspora",
+              "Promoción de la cocina haitiana ante la UNESCO"
+            ]
+          }
+        ]
+      },
+      null,
+      {
+        "title": "Contáctenos",
+        "color": "#B91C1C",
+        "sections": [
+          {
+            "icon": "🏛️",
+            "label": "Sede del MHAVE",
+            "content": "La sede está ubicada en Musseau, Puerto Príncipe. Disponible de lunes a viernes de 8:00 a 16:00 horas.",
+            "items": [
+              "Dirección: Route de Musseau, Puerto Príncipe",
+              "Teléfono: +509 2813-0000",
+              "Correo: contact@mhave.gouv.ht",
+              "Horario: Lun–Vie, 08:00–16:00 HAT",
+              "GPS: 18.5558° N, 72.3348° O"
+            ],
+            "ctaLabel": "Enviar un correo",
+            "ctaUrl": "mailto:contact@mhave.gouv.ht"
+          },
+          {
+            "icon": "🌐",
+            "label": "Directorio consular",
+            "content": "El MHAVE está representado en más de 20 países.",
+            "items": [
+              "Miami (EE. UU.) — +1 305-859-4670",
+              "Nueva York (EE. UU.) — +1 212-477-6350",
+              "Montreal (Canadá) — +1 514-499-1919",
+              "París (Francia) — +33 1 47 63 47 78",
+              "Santo Domingo (R.D.) — +1 809-686-5778",
+              "Ginebra (Suiza) — +41 22 716 00 00"
+            ],
+            "ctaLabel": "Ver todos los consulados",
+            "ctaUrl": "mailto:consulats@mhave.gouv.ht"
+          },
+          {
+            "icon": "👂",
+            "label": "MHAVE Escucha",
+            "content": "Nuestro centro de atención recibe sus quejas, sugerencias y solicitudes de información.",
+            "items": [
+              "Centro de atención: +509 2813-0001",
+              "WhatsApp: +509 3700-0000",
+              "Correo: ecoute@mhave.gouv.ht",
+              "Formulario en línea disponible 24 horas",
+              "Tiempo de respuesta: 48 a 72 horas hábiles"
+            ],
+            "ctaLabel": "Enviar una solicitud",
+            "ctaUrl": "mailto:ecoute@mhave.gouv.ht"
+          }
+        ]
+      }
+    ]
+  },
+  "TileModals": {
+    "items": [
+      {
+        "color": "#1d4ed8",
+        "label": "VIVIR EN EL EXTRANJERO",
+        "icon": "🏠",
+        "headline": "Todo lo que necesita saber para vivir en el extranjero como haitiano",
+        "intro": "Millones de haitianos viven en el extranjero. El MHAVE es su punto de contacto oficial para proteger sus derechos, facilitar sus trámites y mantener su vínculo con Haití.",
+        "sections": [
+          {
+            "icon": "📋",
+            "title": "Trámites administrativos",
+            "items": [
+              "Renovación de pasaporte a través de DELIDOC",
+              "Inscripción en el registro consular de la diáspora",
+              "Poder notarial y actas notariales a distancia",
+              "Declaración de residencia en el extranjero",
+              "Documentos de estado civil certificados a distancia"
+            ]
+          },
+          {
+            "icon": "⚖️",
+            "title": "Derechos y protecciones",
+            "items": [
+              "Protección consular en caso de emergencia",
+              "Asistencia jurídica para nacionales",
+              "Derechos sucesorios sobre bienes en Haití",
+              "Acceso a los servicios sociales haitianos",
+              "Emergencias: +509 2813-0000 (24 horas)"
+            ]
+          },
+          {
+            "icon": "🔗",
+            "title": "Mantenerse conectado a Haití",
+            "items": [
+              "Portal e-gov del MHAVE — servicios en línea",
+              "Boletín mensual de la diáspora",
+              "Grupos comunitarios oficiales del MHAVE",
+              "Eventos culturales en su país",
+              "Programa de retorno voluntario a Haití"
+            ]
+          }
+        ],
+        "ctaLabel": "Inscribirse en el registro consular",
+        "ctaUrl": "mailto:registre@mhave.gouv.ht"
+      },
+      {
+        "color": "#0f766e",
+        "label": "VISITAR HAITÍ",
+        "icon": "✈️",
+        "headline": "Prepare su viaje o regreso a Haití",
+        "intro": "Ya sea que visite Haití o planee un retorno definitivo, el MHAVE le acompaña en todos sus trámites de inmigración, aduanas e instalación.",
+        "sections": [
+          {
+            "icon": "🛂",
+            "title": "iKat — Formulario Digital de Llegada",
+            "items": [
+              "Formulario obligatorio para TODA persona que ingrese a Haití",
+              "Debe completarse en línea antes de su llegada",
+              "Gratuito y rápido (menos de 5 minutos)",
+              "Disponible en: delidoc.gouv.ht/ikat/fr",
+              "Recopila información para las autoridades de inmigración"
+            ]
+          },
+          {
+            "icon": "🧳",
+            "title": "Aduanas y Equipaje",
+            "items": [
+              "Franquicia aduanera para la diáspora: hasta $800 USD",
+              "Importación de vehículos — procedimientos e impuestos",
+              "Envío de mercancías desde el extranjero (barril)",
+              "Declaración de divisas > $10 000 USD",
+              "Contacto AGD: douanes.gouv.ht"
+            ]
+          },
+          {
+            "icon": "🏡",
+            "title": "Instalación y Retorno",
+            "items": [
+              "Programa de acompañamiento al retorno del MHAVE",
+              "Alojamiento temporal para miembros de la diáspora que regresan",
+              "Acceso a los servicios de salud pública",
+              "Inscripción escolar para niños que regresan",
+              "Red de apoyo a la reinserción profesional"
+            ]
+          }
+        ],
+        "ctaLabel": "Preparar mi viaje a Haití",
+        "ctaUrl": "https://immigration.gouv.ht",
+        "cta2Label": "Completar el formulario iKat",
+        "cta2Url": "https://delidoc.gouv.ht/ikat/fr"
+      },
+      {
+        "color": "#b45309",
+        "label": "INVERTIR EN HAITÍ",
+        "icon": "💰",
+        "headline": "Invierta en el futuro de Haití con el apoyo del MHAVE",
+        "intro": "La diáspora haitiana representa más de 3.800 millones de USD en remesas anuales. El MHAVE le acompaña para transformar esta fortaleza en inversiones duraderas.",
+        "sections": [
+          {
+            "icon": "🏭",
+            "title": "Sectores prioritarios",
+            "items": [
+              "Agroindustria y transformación alimentaria",
+              "Turismo y hotelería",
+              "Energía renovable (solar, eólica)",
+              "Servicios digitales y fintech",
+              "Textil y manufactura",
+              "Educación y salud privada"
+            ]
+          },
+          {
+            "icon": "💼",
+            "title": "Incentivos fiscales",
+            "items": [
+              "Exención de derechos aduaneros sobre equipos",
+              "Período de gracia fiscal de 5 a 15 años según sector",
+              "Libre repatriación de utilidades",
+              "Acceso a zonas francas industriales",
+              "Protección de inversiones por ley"
+            ]
+          },
+          {
+            "icon": "🤝",
+            "title": "Acompañamiento MHAVE",
+            "items": [
+              "Conexión con socios locales",
+              "Asistencia en los trámites legales",
+              "Acceso a financiamiento (BRH, SOFIHDES)",
+              "Red de emprendedores de la diáspora",
+              "Talleres de inversión del MHAVE"
+            ]
+          }
+        ],
+        "ctaLabel": "Presentar un proyecto de inversión",
+        "ctaUrl": "mailto:investissement@mhave.gouv.ht"
+      },
+      {
+        "color": "#7c3aed",
+        "label": "MHAVE ESCUCHA",
+        "icon": "👂",
+        "headline": "El MHAVE escucha a la diáspora haitiana",
+        "intro": "MHAVE Escucha es nuestro centro dedicado a recibir quejas, reclamaciones, sugerencias y solicitudes de información. Su voz es importante.",
+        "sections": [
+          {
+            "icon": "📞",
+            "title": "Contáctenos",
+            "items": [
+              "Centro de atención: +509 2813-0001 (Lun–Vie 8h–16h)",
+              "WhatsApp: +509 3700-0000",
+              "Correo: ecoute@mhave.gouv.ht",
+              "Formulario en línea: disponible 24 horas",
+              "Tiempo de respuesta garantizado: 48 a 72 horas hábiles"
+            ]
+          },
+          {
+            "icon": "📝",
+            "title": "Tipos de solicitudes",
+            "items": [
+              "Quejas sobre los servicios consulares",
+              "Reporte de problemas administrativos",
+              "Sugerencias de mejora de los servicios",
+              "Solicitudes de información sobre trámites",
+              "Emergencias consulares (pasaporte, detención, defunción)"
+            ]
+          },
+          {
+            "icon": "📊",
+            "title": "Nuestro compromiso",
+            "items": [
+              "El 100% de los mensajes reciben respuesta",
+              "Informe trimestral público de quejas",
+              "Mejora continua basada en sus comentarios",
+              "Protección de la privacidad conforme al RGPD",
+              "Cumplimiento de la Directiva 001/IHSI/2026"
+            ]
+          }
+        ],
+        "ctaLabel": "Enviar una solicitud",
+        "ctaUrl": "mailto:ecoute@mhave.gouv.ht"
+      },
+      {
+        "color": "#374151",
+        "label": "PROCEDIMIENTOS MHAVE",
+        "icon": "💼",
+        "headline": "Guía completa de los procedimientos administrativos del MHAVE",
+        "intro": "Formularios para descargar, plazos de tramitación, documentos requeridos y contactos de los servicios competentes para cada trámite administrativo.",
+        "sections": [
+          {
+            "icon": "📄",
+            "title": "Formularios disponibles",
+            "items": [
+              "Solicitud de acta de estado civil (PDF)",
+              "Solicitud de legalización de documentos (PDF)",
+              "Inscripción en el registro de la diáspora (en línea)",
+              "Formulario de queja o reclamación (PDF)",
+              "Solicitud de certificado consular (en línea)"
+            ]
+          },
+          {
+            "icon": "⏱️",
+            "title": "Plazos de tramitación",
+            "items": [
+              "Acta de estado civil: 10 a 15 días hábiles",
+              "Legalización / apostilla: 5 a 10 días hábiles",
+              "Inscripción consular: inmediata en línea",
+              "Pasaporte DELIDOC: 4 a 8 semanas",
+              "Respuesta MHAVE Escucha: 48 a 72 horas"
+            ]
+          },
+          {
+            "icon": "📬",
+            "title": "Envío de expedientes",
+            "items": [
+              "Por correo electrónico: formulaires@mhave.gouv.ht",
+              "Por correo postal: Route de Musseau, Puerto Príncipe",
+              "En persona: consulado haitiano más cercano",
+              "En línea a través del portal DELIDOC",
+              "Seguimiento por WhatsApp: +509 3700-0000"
+            ]
+          }
+        ],
+        "ctaLabel": "Descargar los formularios",
+        "ctaUrl": "mailto:formulaires@mhave.gouv.ht"
+      }
+    ]
+  },
+  "Footer": {
+    "ministryName": "Ministerio de Haitianos",
+    "ministrySubtitle": "Viviendo en el Extranjero",
+    "acronym": "MHAVE",
+    "description": "Portal oficial para la diáspora haitiana: servicios del Estado, trámites administrativos y recursos documentales.",
+    "navigationTitle": "Navegación",
+    "navItems": ["Inicio", "Presentación MHAVE", "Servicios", "Trámites admin", "Identidad cultural", "Mediateca", "Contacto"],
+    "servicesTitle": "Servicios en línea",
+    "serviceItems": ["Identidad digital (ONI)", "Pasaportes", "Archivos nacionales", "Legalización"],
+    "copyright": "MHAVE — Ministerio de Haitianos Viviendo en el Extranjero. Datos alojados en infraestructura soberana, de conformidad con la Directiva 001/HSJ/2026.",
+    "infrastructureButton": "🔒 Infraestructura Bare Metal Private Cloud"
   }
 }
