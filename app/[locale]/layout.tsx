@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Footer from "@/components/layouts/Footer";
+import { getMessages } from "next-intl/server";
+import { routing } from "@/i18n/routing";
+import { notFound } from "next/navigation";
+import { NextIntlClientProvider } from "next-intl";
 
 export const metadata: Metadata = {
   title: "MHAVE – Ministère des Haïtiens Vivant à l'Étranger",
@@ -42,10 +46,12 @@ export default async function RootLayout({
   const validLocales = routing.locales as unknown as string[];
   if (!validLocales.includes(locale)) notFound();
   return (
-    <html lang="fr">
+    <html lang={locale}>
       <body>
-        {children}
-        <Footer />
+        <NextIntlClientProvider locale={locale} messages={messages}>
+          {children}
+          <Footer />
+        </NextIntlClientProvider>
       </body>
     </html>
   );

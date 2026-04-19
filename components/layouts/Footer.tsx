@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { LOGO } from "@/app/page";
+import { LOGO } from "@/app/[locale]/page";
 
 
 export default function Footer() {
