@@ -999,7 +999,7 @@ export default function MhavelHsiSovereignPortal() {
       </div>
 
 {/* foote */}
- <footer
+      <footer
         style={{
           background: C.navy,
           padding: "16px 18px",
