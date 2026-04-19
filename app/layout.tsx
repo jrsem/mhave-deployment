@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Footer from "@/components/layouts/Footer";
 
 export const metadata: Metadata = {
   title: "MHAVE – Ministère des Haïtiens Vivant à l'Étranger",
@@ -33,7 +34,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr">
-      <body>{children}</body>
+      <body>
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
