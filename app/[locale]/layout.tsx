@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import NavBar from "./components/NavBar";
+import { NextIntlClientProvider } from "next-intl";
+import {getMessages} from "next-intl/server"
+import { notFound } from "next/navigation";
+import { routing } from "@/i18n/routing";
 
 export const metadata: Metadata = {
   title: "MHAVE – Ministère des Haïtiens Vivant à l'Étranger",
@@ -27,15 +30,27 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
+  params
 }: {
   children: React.ReactNode;
+  params: Promise<{locale: string}>;
 }) {
+
+  const {locale} = await params;
+  // Providing all messages to the client side
+  const messages = await getMessages();
+  // Validate locale
+  const validLocales = routing.locales as unknown as string[];
+  if (!validLocales.includes(locale)) notFound();
   return (
-    <html lang="fr">
- 
-      <body>{children}</body>
+    <html lang={locale}>
+      <body>
+        <NextIntlClientProvider messages={messages}>
+           {children}
+        </NextIntlClientProvider>
+      </body>
     </html>
   );
 }

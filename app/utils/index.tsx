@@ -1,10 +1,12 @@
+import React from 'react';
+
 export function Shield({
-  color = C.white,
+  color = '#ffffff',
   size = 15,
 }: {
   color?: string;
   size?: number;
-}) {
+}): React.ReactElement {
   return (
     <svg
       width={size}

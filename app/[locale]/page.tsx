@@ -1,6 +1,9 @@
 "use client";
 import { useState, useRef, useEffect } from "react";
-import {Footer} from "./components/Footer"
+import { useParams } from "next/navigation";
+import {Footer} from "../components/Footer"
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/routing";
 const C = {
   navy: "#002060",
   dark: "#001040",
@@ -137,6 +140,18 @@ const HERO_T: Record<
     svcTitle: string;
     oniLabel: string;
     oniBtn: string;
+    sidebar: string[];
+    chatTitle: string;
+    chatGreet: string;
+    chatPh: string;
+    chatSend: string;
+    suggestTitle: string;
+    suggestSend: string;
+    suggestTo: string;
+    suggestSubj: string;
+    suggestBody: string;
+    suggestPh: string;
+    shareCopied: string;
   }
 > = {
   FR: {
@@ -999,7 +1014,14 @@ function Crumb({ parts, onHome }: { parts: string[]; onHome: () => void }) {
 
 /* ══ MAIN ══ */
 export default function MhavelHsiSovereignPortal() {
-  const [lang, setLang] = useState<Lang>("FR");
+
+  // translation
+  const t=useTranslations("HeroSection")
+  const params = useParams();
+  const currentLocale = (params?.locale as string) || 'fr';
+  const localeToLang: Record<string, Lang> = { fr: 'FR', ht: 'HT', en: 'EN', es: 'ESP' };
+  const currentLang = localeToLang[currentLocale] || 'FR';
+  const [lang, setLang] = useState<Lang>(currentLang);
   const [modal, setModal] = useState<ModalKey>(null);
   const [nntvOpen, setNntvOpen] = useState(false);
   const [nntvTab, setNntvTab] = useState("live");
@@ -1290,25 +1312,31 @@ export default function MhavelHsiSovereignPortal() {
           ))}
         </nav>
         <div style={{ display: "flex", gap: 3 }}>
-          {LANGS.map((l) => (
-            <button
-              key={l}
-              onClick={() => setLang(l)}
-              style={{
-                background: lang === l ? C.bord : "transparent",
-                border: `1px solid ${lang === l ? C.bord : "#375080"}`,
-                color: C.white,
-                fontSize: 10,
-                fontWeight: lang === l ? 700 : 400,
-                padding: "3px 7px",
-                borderRadius: 4,
-                cursor: "pointer",
-                fontFamily: "inherit",
-              }}
-            >
-              {l}
-            </button>
-          ))}
+          {LANGS.map((l) => {
+            const localeMap: Record<Lang, string> = { FR: 'fr', HT: 'ht', EN: 'en', ESP: 'es' };
+            const isActive = currentLang === l;
+            return (
+              <Link
+                key={l}
+                href="/"
+                locale={localeMap[l]}
+                style={{
+                  background: isActive ? C.bord : "transparent",
+                  border: `1px solid ${isActive ? C.bord : "#375080"}`,
+                  color: C.white,
+                  fontSize: 10,
+                  fontWeight: isActive ? 700 : 400,
+                  padding: "3px 7px",
+                  borderRadius: 4,
+                  cursor: "pointer",
+                  fontFamily: "inherit",
+                  textDecoration: "none",
+                }}
+              >
+                {l}
+              </Link>
+            );
+          })}
         </div>
       </header>
 
@@ -1336,7 +1364,8 @@ export default function MhavelHsiSovereignPortal() {
             lineHeight: 1.3,
           }}
         >
-          {ht.h1}
+          {/* {ht.h1} */}
+            {t("title")}
         </h1>
         <p
           style={{
@@ -4361,7 +4390,7 @@ export default function MhavelHsiSovereignPortal() {
                             width: "100%",
                           }}
                         >
-                          Voir l'album →
+                          Voir l&apos;album →
                         </button>
                       </div>
                     </div>
@@ -4391,7 +4420,7 @@ export default function MhavelHsiSovereignPortal() {
                   }}
                 >
                   Communiqués officiels, déclarations ministérielles, rapports
-                  institutionnels et notes d'information du MHAVE et de l'IHSI.
+                  institutionnels et notes d&apos;information du MHAVE et de l&apos;IHSI.
                 </p>
                 <div
                   style={{ display: "flex", flexDirection: "column", gap: 12 }}
@@ -4401,7 +4430,7 @@ export default function MhavelHsiSovereignPortal() {
                       icon: "📋",
                       cat: "Directive",
                       title:
-                        "Directive 001/IHSI/2026 — Politique Nationale de Gouvernance Électronique d'Haïti",
+                        "Directive 001/IHSI/2026 — Politique Nationale de Gouvernance Électronique d&apos;Haïti",
                       date: "15 Jan 2026",
                       org: "IHSI",
                       urgent: true,

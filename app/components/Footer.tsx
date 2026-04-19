@@ -4,22 +4,17 @@ import Image from "next/image";
 import Link from "next/link";
 import { LOGO } from "@/constants/logo";
 import { C } from "@/constants/colors";
-
-const [lang, setLang] = useState<Lang>("FR");
 import {
   NAV_ROUTES,
-  SEARCH_ROUTE,
   SERVICE_ROUTES,
   TILE_ROUTES,
 } from "@/constants/routes";
 import { NAV_LABELS, TILES } from "@/data/navigation";
-// import { useMhave } from "@/context/MhaveContext";
-import type { Lang } from "@/types";
+import { Shield } from "../utils/index";
 import { useState } from "react";
-import { Shield } from "../utils";
 
 /* ─── Static data ─────────────────────────────────────────────────────────── */
-type Lang = "FR" | "HT" | "EN" | "ESP";
+export type Lang = "FR" | "HT" | "EN" | "ESP";
 
 
 const SERVICE_LABELS: Record<Lang, readonly string[]> = {
@@ -78,7 +73,7 @@ const NAV_LINK =
 /* ─── Component ───────────────────────────────────────────────────────────── */
 
 export function Footer() {
-  const { lang } = useMhave();
+  const [lang] = useState<Lang>("FR");
   const year = new Date().getFullYear();
   const navLabels = NAV_LABELS[lang];
   const tiles = TILES[lang];
