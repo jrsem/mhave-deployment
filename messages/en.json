@@ -624,5 +624,108 @@
     "serviceItems": ["Digital identity (ONI)", "Passports", "National archives", "Legalization"],
     "copyright": "MHAVE — Ministry of Haitians Living Abroad. Data hosted on sovereign infrastructure, in accordance with Directive 001/HSJ/2026.",
     "infrastructureButton": "🔒 Bare Metal Private Cloud Infrastructure"
+  },
+  "Mediatheque": {
+    "title": "📺 NNTV — Natif Natal Televizyon",
+    "subtitle": "Haitian National Television — Public channel of MHAVE and IHSI",
+    "close": "Close",
+    "tabs": {
+      "live": { "icon": "●", "label": "Live" },
+      "events": { "icon": "📅", "label": "Events" },
+      "shows": { "icon": "🎙️", "label": "Shows" },
+      "vod": { "icon": "🎬", "label": "Videothèque" },
+      "photos": { "icon": "📷", "label": "Gallery" },
+      "press": { "icon": "📰", "label": "Press" }
+    },
+    "live": {
+      "nowPlaying": "🔴 LIVE",
+      "program": "Jounal NNTV — Evening Edition",
+      "viewerCount": "12,847 viewers",
+      "watchButton": "▶ Watch Live",
+      "eventsButton": "📅 Upcoming Events",
+      "scheduleTitle": "Today's Schedule",
+      "programs": [
+        { "time": "08:00", "title": "Maten Ayisyen", "desc": "Morning magazine", "live": false },
+        { "time": "11:00", "title": "MHAVE Répond", "desc": "Citizen questions", "live": false },
+        { "time": "14:00", "title": "Kominote Nou", "desc": "Diaspora report", "live": false },
+        { "time": "19:00", "title": "Jounal NNTV", "desc": "TV News", "live": true }
+      ]
+    },
+    "events": {
+      "title": "📅 Events & Broadcasts",
+      "subtitle": "Find all official MHAVE events broadcast live on NNTV — National Diaspora Day, forums, consular ceremonies and cultural activities.",
+      "items": [
+        { "icon": "📡", "title": "JND 2025 — National Diaspora Day", "date": "April 23, 2025", "lieu": "National Palace, PAP", "type": "Official ceremony", "status": "Live broadcast", "color": "#dc2626" },
+        { "icon": "🎙️", "title": "Invest in Haiti Forum 2025", "date": "May 15–17, 2025", "lieu": "Convention Center, PAP", "type": "Economic forum", "status": "Upcoming", "color": "#b45309" },
+        { "icon": "📋", "title": "DELIDOC Workshop — Passports & Identity", "date": "June 5, 2025", "lieu": "Montreal Consulate", "type": "Training", "status": "Registration open", "color": "#047857" },
+        { "icon": "🎭", "title": "Flag Day — Solidarity Concert", "date": "May 18, 2025", "lieu": "Champ de Mars", "type": "Cultural event", "status": "Tickets on sale", "color": "#7c3aed" },
+        { "icon": "📡", "title": "MHAVE Q&A Session", "date": "July 8, 2025", "lieu": "Online — NNTV", "type": "Webinar", "status": "Registration open", "color": "#b45309" },
+        { "icon": "🏛️", "title": "Honorary Distinctions Award Ceremony", "date": "Jan 1, 2026", "lieu": "National Palace", "type": "Official ceremony", "status": "Upcoming", "color": "#dc2626" }
+      ],
+      "watchButton": "▶ Watch Live",
+      "alertButton": "🔔 Alert Me"
+    },
+    "shows": {
+      "title": "🎙️ Shows & Interviews",
+      "subtitle": "All regular NNTV shows — exclusive interviews with personalities, political debates, reports on the Haitian diaspora around the world.",
+      "watchButton": "▶ Watch",
+      "clockIcon": "🕐",
+      "items": [
+        { "icon": "🌅", "show": "Maten Ayisyen", "host": "Journalist Marie-Claire Joseph", "schedule": "Mon–Fri · 09:00–11:00 HAT", "ep": "Episode 142 — Strengthening diaspora-homeland ties", "desc": "Morning magazine covering Haitian and international news." },
+        { "icon": "🎤", "show": "MHAVE Répond", "host": "MHAVE Team", "schedule": "Wednesday · 11:00–12:00 HAT", "ep": "Episode 38 — Your questions about DELIDOC passports", "desc": "Diaspora citizen questions answered live by the MHAVE team." },
+        { "icon": "🌍", "show": "Kominote Nou", "host": "Journalist Pierre Sanon", "schedule": "Mon–Fri · 14:00–15:00 HAT", "ep": "Episode 89 — The Haitian community of Paris", "desc": "Reports on Haitian communities around the world." },
+        { "icon": "💼", "show": "Diaspora & Business", "host": "Economist Jean-Baptiste", "schedule": "Friday · 16:00–17:00 HAT", "ep": "Episode 24 — Investing in Haitian agro-industry", "desc": "Debates and advice for diaspora entrepreneurs." },
+        { "icon": "🎭", "show": "Kiltirèl & Idantite", "host": "Prof. Anne-Marie Voltaire", "schedule": "Sunday · 20:00–21:30 HAT", "ep": "Episode 55 — Haitian carnival, living heritage", "desc": "Exploration of cultural heritage and Haitian identity." },
+        { "icon": "📰", "show": "Jounal NNTV", "host": "NNTV Editorial Team", "schedule": "Mon–Fri · 19:00–20:00 HAT", "ep": "April 11, 2026 Edition", "desc": "Official MHAVE TV news — national and international news." }
+      ]
+    },
+    "vod": {
+      "title": "🎬 Videothèque — Archives",
+      "subtitle": "Access all NNTV show replays, ministerial speeches, reports and documentaries archived since 2020.",
+      "watchButton": "▶ Watch",
+      "durationIcon": "🕐",
+      "items": [
+        { "icon": "📺", "title": "MHAVE Minister Speech — JND 2025", "meta": "Apr 23, 2025 · 42 min", "desc": "Official speech by Minister Kathia Verdier on the occasion of National Diaspora Day." },
+        { "icon": "📺", "title": "Report: Return to Roots — Haitians of Quebec", "meta": "Mar 15, 2025 · 28 min", "desc": "Documentary on the success stories of members of the Haitian diaspora in Canada." },
+        { "icon": "📺", "title": "DELIDOC Webinar — Complete Procedures Guide", "meta": "Feb 10, 2025 · 56 min", "desc": "Technical presentation of the DELIDOC portal and MHAVE online services." },
+        { "icon": "📺", "title": "Debate: Invest in Haiti — Opportunities and Challenges", "meta": "Dec 3, 2024 · 65 min", "desc": "Round table with diaspora entrepreneurs and representatives of the Haitian private sector." },
+        { "icon": "📺", "title": "Jounal NNTV — Special Year-End Holiday Edition", "meta": "Dec 31, 2024 · 45 min", "desc": "Review of 2024 and 2025 outlook for the Haitian diaspora." },
+        { "icon": "📺", "title": "Inauguration Ceremony — Miami Consulate 2024", "meta": "Nov 12, 2024 · 35 min", "desc": "Installation of the new honorary consul and presentation of honorary distinctions." },
+        { "icon": "📺", "title": "Kiltirèl & Idantite — Voodoo, UNESCO Heritage", "meta": "Oct 8, 2024 · 48 min", "desc": "Exploration of Voodoo spirituality and its role in Haitian national identity." },
+        { "icon": "📺", "title": "MHAVE Répond — Questions about Document Legalization", "meta": "Sep 22, 2024 · 38 min", "desc": "Answers to frequently asked questions about legalization and apostille procedures." }
+      ]
+    },
+    "photos": {
+      "title": "📷 Photo Gallery",
+      "subtitle": "Photo albums of official MHAVE events, diplomatic ceremonies, cultural activities and commemorative days.",
+      "photoCount": "photos",
+      "viewAlbum": "View Album →",
+      "items": [
+        { "emoji": "🎤", "album": "JND 2025 — National Diaspora Day", "photos": 86, "date": "Apr 2025" },
+        { "emoji": "🚪", "album": "MHAVE Open House Day", "photos": 54, "date": "Apr 2025" },
+        { "emoji": "🏛️", "album": "Minister Kathia Verdier Inauguration", "photos": 38, "date": "Jan 2025" },
+        { "emoji": "🌍", "album": "Diaspora & Development Forum 2024", "photos": 122, "date": "Nov 2024" },
+        { "emoji": "🎭", "album": "Flag Day — Montreal 2025", "photos": 67, "date": "May 2025" },
+        { "emoji": "🤝", "album": "Bilateral Agreements — Santo Domingo", "photos": 29, "date": "Mar 2025" },
+        { "emoji": "🎬", "album": "Diaspora Excellence Gala 2024", "photos": 94, "date": "Dec 2024" },
+        { "emoji": "📡", "album": "NNTV Studio Inauguration", "photos": 41, "date": "Feb 2024" }
+      ]
+    },
+    "press": {
+      "title": "📰 Press Releases",
+      "subtitle": "Official communiqués, ministerial statements, institutional reports and information notes from MHAVE and IHSI.",
+      "categories": { "Directive": "Directive", "Communiqué": "Communiqué", "Rapport": "Report", "Note": "Info Note" },
+      "download": "📥 Download PDF",
+      "items": [
+        { "icon": "📋", "cat": "Directive", "title": "Directive 001/IHSI/2026 — National Policy for Electronic Governance of Haiti", "date": "Jan 15, 2026", "org": "IHSI", "urgent": true },
+        { "icon": "🎤", "cat": "Communiqué", "title": "Statement by Minister Verdier on the occasion of the 14th National Diaspora Day", "date": "Apr 23, 2025", "org": "MHAVE", "urgent": false },
+        { "icon": "📊", "cat": "Report", "title": "Annual Report 2024 — MHAVE Activities and Consular Services Balance", "date": "Feb 15, 2025", "org": "MHAVE", "urgent": false },
+        { "icon": "🛂", "cat": "Communiqué", "title": "New Passport Application Procedures via DELIDOC — FAQ and Practical Guide", "date": "Jan 10, 2025", "org": "IHSI", "urgent": false },
+        { "icon": "💰", "cat": "Note", "title": "Information Note — Tax Incentives for Diaspora Investors", "date": "Dec 5, 2024", "org": "MHAVE", "urgent": false },
+        { "icon": "⚖️", "cat": "Directive", "title": "Consular Directive 2024/03 — Document Legalization Abroad", "date": "Nov 20, 2024", "org": "MHAVE", "urgent": false },
+        { "icon": "🎭", "cat": "Communiqué", "title": "2024–2025 Cultural Season Program — Diaspora Events", "date": "Oct 1, 2024", "org": "MHAVE", "urgent": false },
+        { "icon": "📋", "cat": "Report", "title": "Mid-Year Balance of MHAVE Listening Center — Complaints and Resolutions", "date": "Sep 15, 2024", "org": "MHAVE", "urgent": false }
+      ]
+    }
   }
 }

@@ -624,5 +624,108 @@
     "serviceItems": ["Identité digitale (ONI)", "Passeports", "Archives nationales", "Légalisation"],
     "copyright": "MHAVE — Ministère des Haïtiens Vivant à l'Étranger. Données hébergées sur infrastructure souveraine, conformément à la Directive 001/HSJ/2026.",
     "infrastructureButton": "🔒 Infrastructure Bare Metal Private Cloud"
+  },
+  "Mediatheque": {
+    "title": "📺 NNTV — Natif Natal Televizyon",
+    "subtitle": "Télévision nationale haïtienne — Chaîne publique du MHAVE et de l'IHSI",
+    "close": "Fermer",
+    "tabs": {
+      "live": { "icon": "●", "label": "Direct" },
+      "events": { "icon": "📅", "label": "Événements" },
+      "shows": { "icon": "🎙️", "label": "Émissions" },
+      "vod": { "icon": "🎬", "label": "Vidéothèque" },
+      "photos": { "icon": "📷", "label": "Galerie" },
+      "press": { "icon": "📰", "label": "Communiqués" }
+    },
+    "live": {
+      "nowPlaying": "🔴 EN DIRECT",
+      "program": "Jounal NNTV — Édition du soir",
+      "viewerCount": "12 847 spectateurs",
+      "watchButton": "▶ Regarder en direct",
+      "eventsButton": "📅 Prochains événements",
+      "scheduleTitle": "Programme du jour",
+      "programs": [
+        { "time": "08:00", "title": "Maten Ayisyen", "desc": "Magazine matinal", "live": false },
+        { "time": "11:00", "title": "MHAVE Répond", "desc": "Questions citoyennes", "live": false },
+        { "time": "14:00", "title": "Kominote Nou", "desc": "Reportage diaspora", "live": false },
+        { "time": "19:00", "title": "Jounal NNTV", "desc": "Journal télévisé", "live": true }
+      ]
+    },
+    "events": {
+      "title": "📅 Événements & Diffusions",
+      "subtitle": "Retrouvez tous les événements officiels du MHAVE diffusés en direct sur NNTV — Journée Nationale de la Diaspora, forums, cérémonies consulaires et activités culturelles.",
+      "items": [
+        { "icon": "📡", "title": "JND 2025 — Journée Nationale de la Diaspora", "date": "23 Avril 2025", "lieu": "Palais National, PAP", "type": "Cérémonie officielle", "status": "Diffusion en direct", "color": "#dc2626" },
+        { "icon": "🎙️", "title": "Forum Investir en Haïti 2025", "date": "15–17 Mai 2025", "lieu": "Centre de Convention, PAP", "type": "Forum économique", "status": "À venir", "color": "#b45309" },
+        { "icon": "📋", "title": "Atelier DELIDOC — Passeports & Identité", "date": "5 Juin 2025", "lieu": "Consulat de Montréal", "type": "Formation", "status": "Inscription ouverte", "color": "#047857" },
+        { "icon": "🎭", "title": "Fête du Drapeau — Concert de solidarité", "date": "18 Mai 2025", "lieu": "Champs de Mars", "type": "Événement culturel", "status": "Billetterie ouverte", "color": "#7c3aed" },
+        { "icon": "📡", "title": "Session MHAVE Questions-Réponses", "date": "8 Juillet 2025", "lieu": "En ligne — NNTV", "type": "Webinaire", "status": "Inscription ouverte", "color": "#b45309" },
+        { "icon": "🏛️", "title": "Cérémonie de remise des distinctions honorifiques", "date": "1er Jan 2026", "lieu": "Palais National", "type": "Cérémonie officielle", "status": "À venir", "color": "#dc2626" }
+      ],
+      "watchButton": "▶ Regarder le direct",
+      "alertButton": "🔔 M'alerter"
+    },
+    "shows": {
+      "title": "🎙️ Émissions & Interviews",
+      "subtitle": "Toutes les émissions régulières de NNTV — interviews exclusives de personnalités, débats politiques, reportages sur la diaspora haïtienne dans le monde.",
+      "watchButton": "▶ Regarder",
+      "clockIcon": "🕐",
+      "items": [
+        { "icon": "🌅", "show": "Maten Ayisyen", "host": "Journaliste Marie-Claire Joseph", "schedule": "Lun–Ven · 09h00–11h00 HAT", "ep": "Épisode 142 — Renforcer les liens diaspora-patrie", "desc": "Magazine matinal couvrant l'actualité haïtienne et internationale." },
+        { "icon": "🎤", "show": "MHAVE Répond", "host": "Équipe MHAVE", "schedule": "Mercredi · 11h00–12h00 HAT", "ep": "Épisode 38 — Vos questions sur les passeports DELIDOC", "desc": "Questions citoyennes de la diaspora répondues en direct par les équipes MHAVE." },
+        { "icon": "🌍", "show": "Kominote Nou", "host": "Journaliste Pierre Sanon", "schedule": "Lun–Ven · 14h00–15h00 HAT", "ep": "Épisode 89 — La communauté haïtienne de Paris", "desc": "Reportages sur les communautés haïtiennes à travers le monde." },
+        { "icon": "💼", "show": "Diaspora & Business", "host": "Économiste Jean-Baptiste", "schedule": "Vendredi · 16h00–17h00 HAT", "ep": "Épisode 24 — Investir dans l'agro-industrie haïtienne", "desc": "Débats et conseils pour les entrepreneurs de la diaspora." },
+        { "icon": "🎭", "show": "Kiltirèl & Idantite", "host": "Prof. Anne-Marie Voltaire", "schedule": "Dimanche · 20h00–21h30 HAT", "ep": "Épisode 55 — Le carnaval haïtien, patrimoine vivant", "desc": "Exploration du patrimoine culturel et de l'identité haïtienne." },
+        { "icon": "📰", "show": "Jounal NNTV", "host": "Rédaction NNTV", "schedule": "Lun–Ven · 19h00–20h00 HAT", "ep": "Édition du 11 Avril 2026", "desc": "Journal télévisé officiel du MHAVE — actualités nationales et internationales." }
+      ]
+    },
+    "vod": {
+      "title": "🎬 Vidéothèque — Archives",
+      "subtitle": "Accédez à toutes les rediffusions des émissions NNTV, allocutions ministérielles, reportages et documentaires archivés depuis 2020.",
+      "watchButton": "▶ Regarder",
+      "durationIcon": "🕐",
+      "items": [
+        { "icon": "📺", "title": "Allocution Ministre MHAVE — JND 2025", "meta": "23 Avr 2025 · 42 min", "desc": "Discours officiel de la Ministre Kathia Verdier à l'occasion de la Journée Nationale de la Diaspora." },
+        { "icon": "📺", "title": "Reportage : Retour aux racines — Les Haïtiens du Québec", "meta": "15 Mars 2025 · 28 min", "desc": "Documentaire sur les parcours de réussite des membres de la diaspora haïtienne au Canada." },
+        { "icon": "📺", "title": "Webinaire DELIDOC — Guide complet des démarches", "meta": "10 Fév 2025 · 56 min", "desc": "Présentation technique du portail DELIDOC et des services en ligne du MHAVE." },
+        { "icon": "📺", "title": "Débat : Investir en Haïti — Opportunités et défis", "meta": "3 Déc 2024 · 65 min", "desc": "Table ronde avec des entrepreneurs de la diaspora et des représentants du secteur privé haïtien." },
+        { "icon": "📺", "title": "Jounal NNTV — Édition spéciale fêtes de fin d'année", "meta": "31 Déc 2024 · 45 min", "desc": "Revue de l'année 2024 et perspectives 2025 pour la diaspora haïtienne." },
+        { "icon": "📺", "title": "Cérémonie d'investiture — Consulat de Miami 2024", "meta": "12 Nov 2024 · 35 min", "desc": "Installation du nouveau consul honoraire et remise des distinctions honorifiques." },
+        { "icon": "📺", "title": "Kiltirèl & Idantite — Le vudou, patrimoine UNESCO", "meta": "8 Oct 2024 · 48 min", "desc": "Exploration de la spiritualité vaudou et de son rôle dans l'identité nationale haïtienne." },
+        { "icon": "📺", "title": "MHAVE Répond — Questions sur la légalisation de documents", "meta": "22 Sep 2024 · 38 min", "desc": "Réponses aux questions fréquentes sur les procédures de légalisation et d'apostille." }
+      ]
+    },
+    "photos": {
+      "title": "📷 Galerie Photo",
+      "subtitle": "Albums photos des événements officiels du MHAVE, cérémonies diplomatiques, activités culturelles et journées commémoratives.",
+      "photoCount": "photos",
+      "viewAlbum": "Voir l'album →",
+      "items": [
+        { "emoji": "🎤", "album": "JND 2025 — Journée Nationale de la Diaspora", "photos": 86, "date": "23 Avr 2025" },
+        { "emoji": "🚪", "album": "Journée Portes Ouvertes MHAVE", "photos": 54, "date": "24 Avr 2025" },
+        { "emoji": "🏛️", "album": "Investiture Ministre Kathia Verdier", "photos": 38, "date": "Jan 2025" },
+        { "emoji": "🌍", "album": "Forum Diaspora & Développement 2024", "photos": 122, "date": "Nov 2024" },
+        { "emoji": "🎭", "album": "Fête du Drapeau — Montréal 2025", "photos": 67, "date": "18 Mai 2025" },
+        { "emoji": "🤝", "album": "Accords bilatéraux — Santo Domingo", "photos": 29, "date": "Mar 2025" },
+        { "emoji": "🎬", "album": "Gala Excellence Diaspora 2024", "photos": 94, "date": "Déc 2024" },
+        { "emoji": "📡", "album": "Inauguration Studio NNTV", "photos": 41, "date": "Fév 2024" }
+      ]
+    },
+    "press": {
+      "title": "📰 Communiqués de Presse",
+      "subtitle": "Communiqués officiels, déclarations ministérielles, rapports institutionnels et notes d'information du MHAVE et de l'IHSI.",
+      "categories": { "Directive": "Directive", "Communiqué": "Communiqué", "Rapport": "Rapport", "Note": "Note info" },
+      "download": "📥 Télécharger le PDF",
+      "items": [
+        { "icon": "📋", "cat": "Directive", "title": "Directive 001/IHSI/2026 — Politique Nationale de Gouvernance Électronique d'Haïti", "date": "15 Jan 2026", "org": "IHSI", "urgent": true },
+        { "icon": "🎤", "cat": "Communiqué", "title": "Déclaration de la Ministre Verdier à l'occasion de la 14e Journée Nationale de la Diaspora", "date": "23 Avr 2025", "org": "MHAVE", "urgent": false },
+        { "icon": "📊", "cat": "Rapport", "title": "Rapport annuel 2024 — Activités du MHAVE et bilan des services consulaires", "date": "15 Fév 2025", "org": "MHAVE", "urgent": false },
+        { "icon": "🛂", "cat": "Communiqué", "title": "Nouvelles procédures de demande de passeport via DELIDOC — FAQ et guide pratique", "date": "10 Jan 2025", "org": "IHSI", "urgent": false },
+        { "icon": "💰", "cat": "Note", "title": "Note d'information — Incitations fiscales pour les investisseurs de la diaspora", "date": "5 Déc 2024", "org": "MHAVE", "urgent": false },
+        { "icon": "⚖️", "cat": "Directive", "title": "Directive consulaire 2024/03 — Légalisation de documents à l'étranger", "date": "20 Nov 2024", "org": "MHAVE", "urgent": false },
+        { "icon": "🎭", "cat": "Communiqué", "title": "Programme culturel de la saison 2024–2025 — Événements de la diaspora", "date": "1 Oct 2024", "org": "MHAVE", "urgent": false },
+        { "icon": "📋", "cat": "Rapport", "title": "Bilan semestriel du centre MHAVE à l'Écoute — Plaintes et résolutions", "date": "15 Sep 2024", "org": "MHAVE", "urgent": false }
+      ]
+    }
   }
 }

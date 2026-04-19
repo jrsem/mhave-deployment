@@ -670,5 +670,108 @@
     "serviceItems": ["Idantite nimerik (ONI)", "Paspò", "Achiv nasyonal", "Legalizasyon"],
     "copyright": "MHAVE — Ministè Ayisyen Kap Viv Aletranje. Done ki nan enfrastrikti souvren, konfòme ak Direktiv 001/HSJ/2026.",
     "infrastructureButton": "🔒 Enfrakstrikti Bare Metal Private Cloud"
+  },
+  "Mediatheque": {
+    "title": "📺 NNTV — Natif Natal Televizyon",
+    "subtitle": "Televizyon nasyonal ayisyen — Chen piblik MHAVE ak IHSI a",
+    "close": "Fèmen",
+    "tabs": {
+      "live": { "icon": "●", "label": "Dirèk" },
+      "events": { "icon": "📅", "label": "Evènman" },
+      "shows": { "icon": "🎙️", "label": "Emisyon" },
+      "vod": { "icon": "🎬", "label": "Videyotèk" },
+      "photos": { "icon": "📷", "label": "Galeri" },
+      "press": { "icon": "📰", "label": "Kominike" }
+    },
+    "live": {
+      "nowPlaying": "🔴 AN DIRÈK",
+      "program": "Jounal NNTV — Edisyon aswè a",
+      "viewerCount": "12 847 moun ap gade",
+      "watchButton": "▶ Gade an dirèk",
+      "eventsButton": "📅 Pwochen evènman yo",
+      "scheduleTitle": "Pwogram jounen an",
+      "programs": [
+        { "time": "08:00", "title": "Maten Ayisyen", "desc": "Magazen matenal", "live": false },
+        { "time": "11:00", "title": "MHAVE Répond", "desc": "Kesyon sitwayen", "live": false },
+        { "time": "14:00", "title": "Kominote Nou", "desc": "Rapò dyaspora", "live": false },
+        { "time": "19:00", "title": "Jounal NNTV", "desc": "Jounal televize", "live": true }
+      ]
+    },
+    "events": {
+      "title": "📅 Evènman & Difizyon",
+      "subtitle": "Retrouv tout evènman ofisyèl MHAVE yo ki difize an dirèk sou NNTV — Jounen Nasyonal Dyaspora a, foròm, seremoni konsilè ak aktivite kiltirèl.",
+      "items": [
+        { "icon": "📡", "title": "JND 2025 — Jounen Nasyonal Dyaspora a", "date": "23 Avril 2025", "lieu": "Palè Nasyonal, PAP", "type": "Seremoni ofisyèl", "status": "Difizyon an dirèk", "color": "#dc2626" },
+        { "icon": "🎙️", "title": "Foròm Envesti nan Ayiti 2025", "date": "15–17 Me 2025", "lieu": "Sant Konvansyon, PAP", "type": "Foròm ekonomik", "status": "Pwochen", "color": "#b45309" },
+        { "icon": "📋", "title": "Atelye DELIDOC — Paspò & Idantite", "date": "5 Jen 2025", "lieu": "Konsila Monreyal", "type": "Fòmasyon", "status": "Enskripsyon louvri", "color": "#047857" },
+        { "icon": "🎭", "title": "Fèt Drapo — Konset solidarite", "date": "18 Me 2025", "lieu": "Chan Mas", "type": "Aktivite kiltirèl", "status": "Bilèteri louvri", "color": "#7c3aed" },
+        { "icon": "📡", "title": "Sesyon MHAVE Kesyon-Repous", "date": "8 Jiyè 2025", "lieu": "An liy — NNTV", "type": "Webinè", "status": "Enskripsyon louvri", "color": "#b45309" },
+        { "icon": "🏛️", "title": "Seremoni kado distenksyon onorifik", "date": "1ye Jan 2026", "lieu": "Palè Nasyonal", "type": "Seremoni ofisyèl", "status": "Pwochen", "color": "#dc2626" }
+      ],
+      "watchButton": "▶ Gade dirèk la",
+      "alertButton": "🔒 Avèti mwen"
+    },
+    "shows": {
+      "title": "🎙️ Emisyon & Entèvyou",
+      "subtitle": "Tout emisyon regilye NNTV yo — entèvyou eksklizif ak pèsonalite, debat politik, rapò sou dyaspora ayisyen nan mond lan.",
+      "watchButton": "▶ Gade",
+      "clockIcon": "🕐",
+      "items": [
+        { "icon": "🌅", "show": "Maten Ayisyen", "host": "Jounalis Marie-Claire Joseph", "schedule": "Len–Van · 09h00–11h00 HAT", "ep": "Epizòd 142 — Ranfòse lyen dyaspora-patrie", "desc": "Magazen matenal kouvri aktyalite ayisyen ak entènasyonal la." },
+        { "icon": "🎤", "show": "MHAVE Répond", "host": "Ekip MHAVE", "schedule": "Mèkredi · 11h00–12h00 HAT", "ep": "Epizòd 38 — Kesyon ou sou paspò DELIDOC yo", "desc": "Kesyon sitwayen dyaspora yo ki reponn an dirèk pa ekip MHAVE yo." },
+        { "icon": "🌍", "show": "Kominote Nou", "host": "Jounalis Pierre Sanon", "schedule": "Len–Van · 14h00–15h00 HAT", "ep": "Epizòd 89 — Kominote ayisyen Pari a", "desc": "Rapò sou kominote ayisyen yo nan mond lan." },
+        { "icon": "💼", "show": "Dyaspora & Biznis", "host": "Ekonomis Jean-Baptiste", "schedule": "Vandredi · 16h00–17h00 HAT", "ep": "Epizòd 24 — Envesti nan agro-endistri ayisyen", "desc": "Deba ak konsèy pou antreprenè dyaspora yo." },
+        { "icon": "🎭", "show": "Kiltirèl & Idantite", "host": "Pwof. Anne-Marie Voltaire", "schedule": "Dimanch · 20h00–21h30 HAT", "ep": "Epizòd 55 — Kanaval ayisyen, patrimwan vivant", "desc": "Eksplorasyon patrimwa kiltirèl ak idantite ayisyen an." },
+        { "icon": "📰", "show": "Jounal NNTV", "host": "Redaksyon NNTV", "schedule": "Len–Van · 19h00–20h00 HAT", "ep": "Edisyon 11 Avril 2026", "desc": "Jounal televize ofisyèl MHAVE — aktyalite nasyonal ak entènasyonal." }
+      ]
+    },
+    "vod": {
+      "title": "🎬 Videyotèk — Achiv",
+      "subtitle": "Aksè nan tout redifizyon emisyon NNTV yo, diskou ministèyèl, rapò ak dokimantè ki achive depi 2020.",
+      "watchButton": "▶ Gade",
+      "durationIcon": "🕐",
+      "items": [
+        { "icon": "📺", "title": "Diskou Minis MHAVE — JND 2025", "meta": "23 Avr 2025 · 42 min", "desc": "Diskou ofisyèl Minis Kathia Verdier okazyon Jounen Nasyonal Dyaspora a." },
+        { "icon": "📺", "title": "Rapò : Retou nan rasin — Ayisyen Kebèk la", "meta": "15 Mas 2025 · 28 min", "desc": "Dokimantè sou parcours reyisit manm dyaspora ayisyen nan Kanada." },
+        { "icon": "📺", "title": "Webinè DELIDOC — Gid konplè pwosedi yo", "meta": "10 Fev 2025 · 56 min", "desc": "Prezantasyon teknik pòtal DELIDOC ak sèvis an liy MHAVE yo." },
+        { "icon": "📺", "title": "Deba : Envesti nan Ayiti — Opòtinite ak defi", "meta": "3 Des 2024 · 65 min", "desc": "Tab wonn ak antreprenè dyaspora ak reprezantan sektè prive ayisyen an." },
+        { "icon": "📺", "title": "Jounal NNTV — Edisyon espesyal fèt fen ane", "meta": "31 Des 2024 · 45 min", "desc": "Revi ane 2024 la ak pespektiv 2025 pou dyaspora ayisyen an." },
+        { "icon": "📺", "title": "Seremoni envestiti — Konsila Miami 2024", "meta": "12 Nov 2024 · 35 min", "desc": "Enstalasyon nouvo konsil onorè ak remiz distenksyon onorifik." },
+        { "icon": "📺", "title": "Kiltirèl & Idantite — Vaudou, patrimwan UNESCO", "meta": "8 Okt 2024 · 48 min", "desc": "Eksplorasyon espirityalite vodou ak wòl li nan idantite nasyonal ayisyen an." },
+        { "icon": "📺", "title": "MHAVE Répond — Kesyon sou legalizasyon dokiman", "meta": "22 Sep 2024 · 38 min", "desc": "Repons sou kesyon souvan sou pwosedi legalizasyon ak apostiy." }
+      ]
+    },
+    "photos": {
+      "title": "📷 Galeri Foto",
+      "subtitle": "Albòm foto evènman ofisyèl MHAVE yo, seremoni diplomatique, aktivite kiltirèl ak jounen komemoratif.",
+      "photoCount": "foto",
+      "viewAlbum": "Wè albòm la →",
+      "items": [
+        { "emoji": "🎤", "album": "JND 2025 — Jounen Nasyonal Dyaspora a", "photos": 86, "date": "23 Avr 2025" },
+        { "emoji": "🚪", "album": "Jounen Pòt Louvè MHAVE", "photos": 54, "date": "24 Avr 2025" },
+        { "emoji": "🏛️", "album": "Envestiti Minis Kathia Verdier", "photos": 38, "date": "Jan 2025" },
+        { "emoji": "🌍", "album": "Foròm Dyaspora & Devlopman 2024", "photos": 122, "date": "Nov 2024" },
+        { "emoji": "🎭", "album": "Fèt Drapo — Monreyal 2025", "photos": 67, "date": "18 Me 2025" },
+        { "emoji": "🤝", "album": "Akò bilateral — Santo Domingo", "photos": 29, "date": "Mas 2025" },
+        { "emoji": "🎬", "album": "Gala Ekselans Dyaspora 2024", "photos": 94, "date": "Des 2024" },
+        { "emoji": "📡", "album": "Inogirasyon Studio NNTV", "photos": 41, "date": "Fev 2024" }
+      ]
+    },
+    "press": {
+      "title": "📰 Kominike Pou La Près",
+      "subtitle": "Kominike ofisyèl, deklarasyon ministèyèl, rapò enstitisyonèl ak nòt enfòmasyon MHAVE ak IHSI.",
+      "categories": { "Directive": "Direktiv", "Communiqué": "Kominike", "Rapport": "Rapò", "Note": "Nòt enfòmasyon" },
+      "download": "📥 Telechaje PDF la",
+      "items": [
+        { "icon": "📋", "cat": "Direktiv", "title": "Direktiv 001/IHSI/2026 — Politik Nasyonal Gouvernans Elektronik Ayiti", "date": "15 Jan 2026", "org": "IHSI", "urgent": true },
+        { "icon": "🎤", "cat": "Kominike", "title": "Deklarasyon Minis Verdier okazyon 14yèm Jounen Nasyonal Dyaspora a", "date": "23 Avr 2025", "org": "MHAVE", "urgent": false },
+        { "icon": "📊", "cat": "Rapò", "title": "Rapò anyèl 2024 — Aktivite MHAVE ak bilan sèvis konsila yo", "date": "15 Fev 2025", "org": "MHAVE", "urgent": false },
+        { "icon": "🛂", "cat": "Kominike", "title": "Nouvo pwosedi demann paspò via DELIDOC — FAQ ak gid pratik", "date": "10 Jan 2025", "org": "IHSI", "urgent": false },
+        { "icon": "💰", "cat": "Nòt", "title": "Nòt enfòmasyon — Ankourajman fiskal pou envestisè dyaspora yo", "date": "5 Des 2024", "org": "MHAVE", "urgent": false },
+        { "icon": "⚖️", "cat": "Direktiv", "title": "Direktiv konsila 2024/03 — Legalizasyon dokiman aletranje", "date": "20 Nov 2024", "org": "MHAVE", "urgent": false },
+        { "icon": "🎭", "cat": "Kominike", "title": "Pwogram kiltirèl sezon 2024–2025 — Evènman dyaspora yo", "date": "1 Okt 2024", "org": "MHAVE", "urgent": false },
+        { "icon": "📋", "cat": "Rapò", "title": "Bilan semès sant MHAVE Koute — Plent ak rezolisyon yo", "date": "15 Sep 2024", "org": "MHAVE", "urgent": false }
+      ]
+    }
   }
 }
