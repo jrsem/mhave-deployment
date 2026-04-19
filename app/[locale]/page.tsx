@@ -493,7 +493,8 @@ export default function MhavelHsiSovereignPortal() {
             return (
               <Link
                 key={l}
-                href={`/${targetLocale}`}
+                href="/"
+                locale={targetLocale}
                 style={{
                   background: isActive ? C.bord : "transparent",
                   border: `1px solid ${isActive ? C.bord : "#375080"}`,
