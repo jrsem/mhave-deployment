@@ -188,6 +188,7 @@ export default function MhavelHsiSovereignPortal() {
   const servicesT = useTranslations("Services");
   const navPagesT = useTranslations("NavPages");
   const tileModalsT = useTranslations("TileModals");
+  const mediaT = useTranslations("Mediatheque");
 
   const params = useParams();
   const currentLocale = (params?.locale as string) || 'fr';
@@ -2476,7 +2477,7 @@ export default function MhavelHsiSovereignPortal() {
               </button>
               <span style={{ color: "rgba(255,255,255,0.3)" }}>›</span>
               <span style={{ color: C.white, fontWeight: 700 }}>
-                MÉDIATHÈQUE
+                {mediaT("title")}
               </span>
             </div>
             <span
@@ -2490,7 +2491,7 @@ export default function MhavelHsiSovereignPortal() {
                 borderRadius: 3,
               }}
             >
-              ● EN DIRECT
+              {mediaT("live.nowPlaying")}
             </span>
           </div>
           <div
@@ -2504,12 +2505,12 @@ export default function MhavelHsiSovereignPortal() {
           >
             {(
               [
-                { id: "live", l: "🔴 DIRECT", d: "En cours" },
-                { id: "events", l: "📅 ÉVÉNEMENTS", d: "Agenda" },
-                { id: "shows", l: "🎙️ ÉMISSIONS", d: "Interviews" },
-                { id: "vod", l: "🎬 VIDÉOTHÈQUE", d: "Archives" },
-                { id: "photos", l: "📷 GALERIE", d: "Photos" },
-                { id: "press", l: "📰 COMMUNIQUÉS", d: "Presse" },
+                { id: "live", l: `${mediaT("tabs.live.icon")} ${mediaT("tabs.live.label")}`, d: mediaT("live.nowPlaying") },
+                { id: "events", l: `${mediaT("tabs.events.icon")} ${mediaT("tabs.events.label")}`, d: "Agenda" },
+                { id: "shows", l: `${mediaT("tabs.shows.icon")} ${mediaT("tabs.shows.label")}`, d: "Interviews" },
+                { id: "vod", l: `${mediaT("tabs.vod.icon")} ${mediaT("tabs.vod.label")}`, d: "Archives" },
+                { id: "photos", l: `${mediaT("tabs.photos.icon")} ${mediaT("tabs.photos.label")}`, d: "Photos" },
+                { id: "press", l: `${mediaT("tabs.press.icon")} ${mediaT("tabs.press.label")}`, d: "Presse" },
               ] as { id: string; l: string; d: string }[]
             ).map((t) => (
               <button
@@ -2584,7 +2585,7 @@ export default function MhavelHsiSovereignPortal() {
                     <div
                       style={{ color: C.white, fontSize: 15, fontWeight: 700 }}
                     >
-                      NNTV — Natif Natal Televizyon
+                      {mediaT("title")}
                     </div>
                     <div
                       style={{
@@ -2595,9 +2596,7 @@ export default function MhavelHsiSovereignPortal() {
                         lineHeight: 1.7,
                       }}
                     >
-                      La chaîne officielle du MHAVE. Émissions en direct,
-                      interviews exclusives et événements de la diaspora
-                      haïtienne.
+                      {mediaT("subtitle")}
                     </div>
                     <div style={{ display: "flex", gap: 10, marginTop: 6 }}>
                       <button
@@ -2613,7 +2612,7 @@ export default function MhavelHsiSovereignPortal() {
                           fontFamily: "inherit",
                         }}
                       >
-                        ▶ Regarder en direct
+                        {mediaT("live.watchButton")}
                       </button>
                       <button
                         onClick={() => setNntvTab("events")}
@@ -2628,7 +2627,7 @@ export default function MhavelHsiSovereignPortal() {
                           fontFamily: "inherit",
                         }}
                       >
-                        📅 Événements
+                        {mediaT("tabs.events.icon")} {mediaT("tabs.events.label")}
                       </button>
                     </div>
                     <span
@@ -2725,52 +2724,10 @@ export default function MhavelHsiSovereignPortal() {
                       marginBottom: 4,
                     }}
                   >
-                    Programme du jour
+                    {mediaT("live.scheduleTitle")}
                   </div>
                   {(
-                    [
-                      {
-                        time: "09:00",
-                        title: "Maten Ayisyen",
-                        desc: "Magazine matinal",
-                        live: true,
-                      },
-                      {
-                        time: "11:00",
-                        title: "MHAVE Répond",
-                        desc: "Questions citoyennes",
-                        live: false,
-                      },
-                      {
-                        time: "14:00",
-                        title: "Kominote Nou",
-                        desc: "Actualités diaspora",
-                        live: false,
-                      },
-                      {
-                        time: "16:30",
-                        title: "Entretien Ministre",
-                        desc: "Kathia Verdier",
-                        live: false,
-                      },
-                      {
-                        time: "19:00",
-                        title: "Jounal NNTV",
-                        desc: "Journal télévisé",
-                        live: false,
-                      },
-                      {
-                        time: "21:00",
-                        title: "Kiltirèl & Idantite",
-                        desc: "Patrimoine haïtien",
-                        live: false,
-                      },
-                    ] as {
-                      time: string;
-                      title: string;
-                      desc: string;
-                      live: boolean;
-                    }[]
+                    (mediaT.raw("live.programs") as { time: string; title: string; desc: string; live: boolean }[])
                   ).map((p, i) => (
                     <div
                       key={i}
@@ -2860,7 +2817,7 @@ export default function MhavelHsiSovereignPortal() {
                     marginBottom: 6,
                   }}
                 >
-                  📅 Agenda & Événements
+                  {mediaT("events.title")}
                 </h3>
                 <p
                   style={{
@@ -2869,9 +2826,7 @@ export default function MhavelHsiSovereignPortal() {
                     marginBottom: 20,
                   }}
                 >
-                  Retrouvez tous les événements officiels du MHAVE diffusés en
-                  direct sur NNTV — Journée Nationale de la Diaspora, forums,
-                  cérémonies consulaires et activités culturelles.
+                  {mediaT("events.subtitle")}
                 </p>
                 <div
                   style={{
@@ -2880,62 +2835,9 @@ export default function MhavelHsiSovereignPortal() {
                     gap: 14,
                   }}
                 >
-                  {[
-                    {
-                      icon: "🎤",
-                      title: "Journée Nationale de la Diaspora",
-                      date: "23 Avril 2025",
-                      lieu: "Port-au-Prince, Haïti",
-                      type: "Événement officiel",
-                      status: "Rediffusion disponible",
-                      color: "#B91C1C",
-                    },
-                    {
-                      icon: "🏛️",
-                      title: "Forum Diaspora & Développement",
-                      date: "12 Novembre 2024",
-                      lieu: "Miami, Florida",
-                      type: "Conférence",
-                      status: "Rediffusion disponible",
-                      color: "#1d4ed8",
-                    },
-                    {
-                      icon: "🎭",
-                      title: "Fête du Drapeau MHAVE Montréal",
-                      date: "18 Mai 2025",
-                      lieu: "Montréal, Canada",
-                      type: "Célébration culturelle",
-                      status: "À venir",
-                      color: "#0f766e",
-                    },
-                    {
-                      icon: "🎬",
-                      title: "Soirée Gala Diaspora Excellence",
-                      date: "30 Juin 2025",
-                      lieu: "New York, USA",
-                      type: "Gala",
-                      status: "À venir",
-                      color: "#7c3aed",
-                    },
-                    {
-                      icon: "📡",
-                      title: "Session MHAVE Questions-Réponses",
-                      date: "8 Juillet 2025",
-                      lieu: "En ligne — NNTV",
-                      type: "Webinaire",
-                      status: "Inscription ouverte",
-                      color: "#b45309",
-                    },
-                    {
-                      icon: "🌍",
-                      title: "Journée de la Culture Haïtienne",
-                      date: "Août 2025",
-                      lieu: "Paris, France",
-                      type: "Événement culturel",
-                      status: "À confirmer",
-                      color: "#047857",
-                    },
-                  ].map((ev, i) => (
+                  {(
+                    mediaT.raw("events.items") as { icon: string; title: string; date: string; lieu: string; type: string; status: string; color: string }[]
+                  ).map((ev, i) => (
                     <div
                       key={i}
                       style={{
@@ -3042,7 +2944,7 @@ export default function MhavelHsiSovereignPortal() {
                     marginBottom: 6,
                   }}
                 >
-                  🎙️ Émissions & Interviews
+                  {mediaT("shows.title")}
                 </h3>
                 <p
                   style={{
@@ -3051,9 +2953,7 @@ export default function MhavelHsiSovereignPortal() {
                     marginBottom: 20,
                   }}
                 >
-                  Toutes les émissions régulières de NNTV — interviews
-                  exclusives de personnalités, débats politiques, reportages sur
-                  la diaspora haïtienne dans le monde.
+                  {mediaT("shows.subtitle")}
                 </p>
                 <div
                   style={{
@@ -3062,56 +2962,9 @@ export default function MhavelHsiSovereignPortal() {
                     gap: 14,
                   }}
                 >
-                  {[
-                    {
-                      icon: "🌅",
-                      show: "Maten Ayisyen",
-                      host: "Journaliste Marie-Claire Joseph",
-                      schedule: "Lun–Ven · 09h00–11h00 HAT",
-                      ep: "Épisode 142 — Renforcer les liens diaspora-patrie",
-                      desc: "Magazine matinal couvrant l'actualité haïtienne et internationale.",
-                    },
-                    {
-                      icon: "🎤",
-                      show: "MHAVE Répond",
-                      host: "Équipe MHAVE",
-                      schedule: "Mercredi · 11h00–12h00 HAT",
-                      ep: "Épisode 38 — Vos questions sur les passeports DELIDOC",
-                      desc: "Questions citoyennes de la diaspora répondues en direct par les équipes MHAVE.",
-                    },
-                    {
-                      icon: "🌍",
-                      show: "Kominote Nou",
-                      host: "Journaliste Pierre Sanon",
-                      schedule: "Lun–Ven · 14h00–15h00 HAT",
-                      ep: "Épisode 89 — La communauté haïtienne de Paris",
-                      desc: "Reportages sur les communautés haïtiennes à travers le monde.",
-                    },
-                    {
-                      icon: "💼",
-                      show: "Diaspora & Business",
-                      host: "Économiste Jean-Baptiste",
-                      schedule: "Vendredi · 16h00–17h00 HAT",
-                      ep: "Épisode 24 — Investir dans l'agro-industrie haïtienne",
-                      desc: "Débats et conseils pour les entrepreneurs de la diaspora.",
-                    },
-                    {
-                      icon: "🎭",
-                      show: "Kiltirèl & Idantite",
-                      host: "Prof. Anne-Marie Voltaire",
-                      schedule: "Dimanche · 20h00–21h30 HAT",
-                      ep: "Épisode 55 — Le carnaval haïtien, patrimoine vivant",
-                      desc: "Exploration du patrimoine culturel et de l'identité haïtienne.",
-                    },
-                    {
-                      icon: "📰",
-                      show: "Jounal NNTV",
-                      host: "Rédaction NNTV",
-                      schedule: "Lun–Ven · 19h00–20h00 HAT",
-                      ep: "Édition du 11 Avril 2026",
-                      desc: "Journal télévisé officiel du MHAVE — actualités nationales et internationales.",
-                    },
-                  ].map((s, i) => (
+                  {(
+                    mediaT.raw("shows.items") as { icon: string; show: string; host: string; schedule: string; ep: string; desc: string }[]
+                  ).map((s, i) => (
                     <div
                       key={i}
                       style={{
@@ -3216,7 +3069,7 @@ export default function MhavelHsiSovereignPortal() {
                     marginBottom: 6,
                   }}
                 >
-                  🎬 Vidéothèque — Archives
+                  {mediaT("vod.title")}
                 </h3>
                 <p
                   style={{
@@ -3225,9 +3078,7 @@ export default function MhavelHsiSovereignPortal() {
                     marginBottom: 20,
                   }}
                 >
-                  Accédez à toutes les rediffusions des émissions NNTV,
-                  allocutions ministérielles, reportages et documentaires
-                  archivés depuis 2020.
+                  {mediaT("vod.subtitle")}
                 </p>
                 <div
                   style={{
@@ -3236,72 +3087,9 @@ export default function MhavelHsiSovereignPortal() {
                     gap: 14,
                   }}
                 >
-                  {[
-                    {
-                      thumb: "🎤",
-                      title: "Allocution Ministre Verdier — JND 2025",
-                      duration: "42 min",
-                      views: "12 400",
-                      date: "23 Avr 2025",
-                      cat: "Discours officiel",
-                    },
-                    {
-                      thumb: "🏛️",
-                      title: "Forum Investissement Diaspora 2024",
-                      duration: "1h 38min",
-                      views: "8 750",
-                      date: "12 Nov 2024",
-                      cat: "Conférence",
-                    },
-                    {
-                      thumb: "🌅",
-                      title: "Maten Ayisyen — Spécial 100e épisode",
-                      duration: "55 min",
-                      views: "6 200",
-                      date: "15 Mar 2025",
-                      cat: "Émission",
-                    },
-                    {
-                      thumb: "📡",
-                      title: "MHAVE Répond — Passeports DELIDOC",
-                      duration: "58 min",
-                      views: "9 100",
-                      date: "8 Jan 2025",
-                      cat: "Q&R citoyen",
-                    },
-                    {
-                      thumb: "🎭",
-                      title: "Documentaire — 221 ans d'indépendance haïtienne",
-                      duration: "1h 12min",
-                      views: "15 600",
-                      date: "1 Jan 2026",
-                      cat: "Documentaire",
-                    },
-                    {
-                      thumb: "🌍",
-                      title: "Kominote Nou — Haïtiens de Boston",
-                      duration: "44 min",
-                      views: "4 300",
-                      date: "20 Fév 2025",
-                      cat: "Reportage",
-                    },
-                    {
-                      thumb: "💼",
-                      title: "Diaspora & Business — Zone franche SONAPI",
-                      duration: "48 min",
-                      views: "3 800",
-                      date: "7 Mar 2025",
-                      cat: "Économie",
-                    },
-                    {
-                      thumb: "🎬",
-                      title: "Gala Excellence Diaspora 2024 — Intégrale",
-                      duration: "2h 05min",
-                      views: "21 000",
-                      date: "15 Déc 2024",
-                      cat: "Événement",
-                    },
-                  ].map((v, i) => (
+                  {(
+                    mediaT.raw("vod.items") as { icon: string; title: string; meta: string; desc: string }[]
+                  ).map((v, i) => (
                     <div
                       key={i}
                       style={{
@@ -3331,7 +3119,7 @@ export default function MhavelHsiSovereignPortal() {
                           position: "relative",
                         }}
                       >
-                        {v.thumb}
+                        {v.icon}
                         <div
                           style={{
                             position: "absolute",
@@ -3370,7 +3158,7 @@ export default function MhavelHsiSovereignPortal() {
                             borderRadius: 3,
                           }}
                         >
-                          {v.duration}
+                          {v.meta}
                         </span>
                       </div>
                       <div style={{ padding: "10px 12px" }}>
@@ -3387,28 +3175,13 @@ export default function MhavelHsiSovereignPortal() {
                         </div>
                         <div
                           style={{
-                            display: "flex",
-                            gap: 8,
                             fontSize: 9,
-                            color: "rgba(255,255,255,0.4)",
+                            color: "rgba(255,255,255,0.6)",
+                            marginTop: 4,
+                            lineHeight: 1.4,
                           }}
                         >
-                          <span>👁 {v.views} vues</span>
-                          <span>📅 {v.date}</span>
-                        </div>
-                        <div
-                          style={{
-                            marginTop: 6,
-                            background: "#1d4ed8",
-                            color: C.white,
-                            fontSize: 8,
-                            fontWeight: 700,
-                            padding: "2px 8px",
-                            borderRadius: 3,
-                            display: "inline-block",
-                          }}
-                        >
-                          {v.cat}
+                          {v.desc}
                         </div>
                       </div>
                     </div>
@@ -3428,7 +3201,7 @@ export default function MhavelHsiSovereignPortal() {
                     marginBottom: 6,
                   }}
                 >
-                  📷 Galerie Photo
+                  {mediaT("photos.title")}
                 </h3>
                 <p
                   style={{
@@ -3437,9 +3210,7 @@ export default function MhavelHsiSovereignPortal() {
                     marginBottom: 20,
                   }}
                 >
-                  Albums photos des événements officiels du MHAVE, cérémonies
-                  diplomatiques, activités culturelles et journées
-                  commémoratives.
+                  {mediaT("photos.subtitle")}
                 </p>
                 <div
                   style={{
@@ -3448,56 +3219,9 @@ export default function MhavelHsiSovereignPortal() {
                     gap: 12,
                   }}
                 >
-                  {[
-                    {
-                      emoji: "🎤",
-                      album: "JND 2025 — Journée Nationale de la Diaspora",
-                      photos: 86,
-                      date: "23 Avr 2025",
-                    },
-                    {
-                      emoji: "🚪",
-                      album: "Journée Portes Ouvertes MHAVE",
-                      photos: 54,
-                      date: "24 Avr 2025",
-                    },
-                    {
-                      emoji: "🏛️",
-                      album: "Investiture Ministre Kathia Verdier",
-                      photos: 38,
-                      date: "Jan 2025",
-                    },
-                    {
-                      emoji: "🌍",
-                      album: "Forum Diaspora & Développement 2024",
-                      photos: 122,
-                      date: "Nov 2024",
-                    },
-                    {
-                      emoji: "🎭",
-                      album: "Fête du Drapeau — Montréal 2025",
-                      photos: 67,
-                      date: "18 Mai 2025",
-                    },
-                    {
-                      emoji: "🤝",
-                      album: "Accords bilatéraux — Santo Domingo",
-                      photos: 29,
-                      date: "Mar 2025",
-                    },
-                    {
-                      emoji: "🎬",
-                      album: "Gala Excellence Diaspora 2024",
-                      photos: 94,
-                      date: "Déc 2024",
-                    },
-                    {
-                      emoji: "📡",
-                      album: "Inauguration Studio NNTV",
-                      photos: 41,
-                      date: "Fév 2024",
-                    },
-                  ].map((a, i) => (
+                  {(
+                    mediaT.raw("photos.items") as { emoji: string; album: string; photos: number; date: string }[]
+                  ).map((a, i) => (
                     <div
                       key={i}
                       style={{
@@ -3548,7 +3272,7 @@ export default function MhavelHsiSovereignPortal() {
                             color: "rgba(255,255,255,0.4)",
                           }}
                         >
-                          <span>📷 {a.photos} photos</span>
+                          📷 {a.photos} {mediaT("photos.photoCount")}
                           <span>{a.date}</span>
                         </div>
                         <button
@@ -3565,7 +3289,7 @@ export default function MhavelHsiSovereignPortal() {
                             width: "100%",
                           }}
                         >
-                          Voir l&apos;album →
+                          {mediaT("photos.viewAlbum")}
                         </button>
                       </div>
                     </div>
@@ -3585,7 +3309,7 @@ export default function MhavelHsiSovereignPortal() {
                     marginBottom: 6,
                   }}
                 >
-                  📰 Communiqués de Presse
+                  {mediaT("press.title")}
                 </h3>
                 <p
                   style={{
@@ -3594,86 +3318,14 @@ export default function MhavelHsiSovereignPortal() {
                     marginBottom: 20,
                   }}
                 >
-                  Communiqués officiels, déclarations ministérielles, rapports
-                  institutionnels et notes d&apos;information du MHAVE et de l&apos;IHSI.
+                  {mediaT("press.subtitle")}
                 </p>
                 <div
                   style={{ display: "flex", flexDirection: "column", gap: 12 }}
                 >
-                  {[
-                    {
-                      icon: "📋",
-                      cat: "Directive",
-                      title:
-                        "Directive 001/IHSI/2026 — Politique Nationale de Gouvernance Électronique d&apos;Haïti",
-                      date: "15 Jan 2026",
-                      org: "IHSI",
-                      urgent: true,
-                    },
-                    {
-                      icon: "🎤",
-                      cat: "Communiqué",
-                      title:
-                        "Déclaration de la Ministre Verdier à l'occasion de la 14e Journée Nationale de la Diaspora",
-                      date: "23 Avr 2025",
-                      org: "MHAVE",
-                      urgent: false,
-                    },
-                    {
-                      icon: "📊",
-                      cat: "Rapport",
-                      title:
-                        "Rapport annuel MHAVE 2024 — Bilan des services rendus à la diaspora",
-                      date: "28 Fév 2025",
-                      org: "MHAVE",
-                      urgent: false,
-                    },
-                    {
-                      icon: "📡",
-                      cat: "Note d'info",
-                      title:
-                        "Lancement du portail DELIDOC — Demande de passeport en ligne pour la diaspora",
-                      date: "10 Mar 2025",
-                      org: "DIE / MHAVE",
-                      urgent: false,
-                    },
-                    {
-                      icon: "🌐",
-                      cat: "Accord",
-                      title:
-                        "Mémorandum d'entente MHAVE–BID sur le financement de projets de la diaspora",
-                      date: "5 Nov 2024",
-                      org: "MHAVE / BID",
-                      urgent: false,
-                    },
-                    {
-                      icon: "⚖️",
-                      cat: "Décret",
-                      title:
-                        "Décret portant organisation et fonctionnement des consulats haïtiens à l'étranger",
-                      date: "2024",
-                      org: "Gouvernement haïtien",
-                      urgent: false,
-                    },
-                    {
-                      icon: "🛡️",
-                      cat: "Sécurité",
-                      title:
-                        "Note de sécurité — Protection des données des citoyens haïtiens (Art. 24.10, Décret 2020)",
-                      date: "Jan 2026",
-                      org: "IHSI / DIRC",
-                      urgent: false,
-                    },
-                    {
-                      icon: "📅",
-                      cat: "Agenda",
-                      title:
-                        "Programme des activités consulaires MHAVE — 2e semestre 2026",
-                      date: "1 Jan 2026",
-                      org: "MHAVE",
-                      urgent: false,
-                    },
-                  ].map((c, i) => (
+                  {(
+                    mediaT.raw("press.items") as { icon: string; cat: string; title: string; date: string; org: string; urgent: boolean }[]
+                  ).map((c, i) => (
                     <div
                       key={i}
                       style={{
