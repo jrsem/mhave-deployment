@@ -62,224 +62,6 @@ function Shield({
   );
 }
 
-const NAV_LABELS: Record<Lang, string[]> = {
-  FR: [
-    "ACCUEIL",
-    "PRÉSENTATION MHAVE",
-    "SERVICES",
-    "DÉMARCHES ADMIN.",
-    "IDENTITÉ CULTURELLE",
-    "MÉDIATHÈQUE",
-    "CONTACT",
-  ],
-  HT: [
-    "AKÈY",
-    "PREZANTASYON MHAVE",
-    "SÈVIS",
-    "DEMACH ADMIN.",
-    "IDANTITE KILTIRÈL",
-    "MEDIATEQUE",
-    "KONTAK",
-  ],
-  EN: [
-    "HOME",
-    "ABOUT MHAVE",
-    "SERVICES",
-    "ADMIN PROCEDURES",
-    "CULTURAL IDENTITY",
-    "MÉDIATHÈQUE",
-    "CONTACT",
-  ],
-  ESP: [
-    "INICIO",
-    "PRESENTACIÓN MHAVE",
-    "SERVICIOS",
-    "TRÁMITES ADMIN.",
-    "IDENTIDAD CULTURAL",
-    "MEDIATECA",
-    "CONTACTO",
-  ],
-};
-const TILES: Record<Lang, { label: string; icon: string }[]> = {
-  FR: [
-    { label: "VIVRE À L'ÉTRANGER", icon: "🏠" },
-    { label: "VENIR EN HAÏTI", icon: "✈️" },
-    { label: "INVESTIR EN HAÏTI", icon: "💰" },
-    { label: "MHAVE À L'ÉCOUTE", icon: "👂" },
-    { label: "PROCÉDURES MHAVE", icon: "💼" },
-  ],
-  HT: [
-    { label: "MAP VIV A LETRANJE", icon: "🏠" },
-    { label: "MAP VINI AYITI", icon: "✈️" },
-    { label: "ENVESTI AN AYITI", icon: "💰" },
-    { label: "MHAVE AP KOUTE W", icon: "👂" },
-    { label: "SÈVIS MHAVE", icon: "💼" },
-  ],
-  EN: [
-    { label: "LIVING ABROAD", icon: "🏠" },
-    { label: "COMING TO HAITI", icon: "✈️" },
-    { label: "INVEST IN HAITI", icon: "💰" },
-    { label: "MHAVE LISTENS", icon: "👂" },
-    { label: "PROCEDURES", icon: "💼" },
-  ],
-  ESP: [
-    { label: "VIVIR EN EXTERIOR", icon: "🏠" },
-    { label: "VENIR A HAITÍ", icon: "✈️" },
-    { label: "INVERTIR EN HAITÍ", icon: "💰" },
-    { label: "MHAVE ESCUCHA", icon: "👂" },
-    { label: "PROCEDIMIENTOS", icon: "💼" },
-  ],
-};
-const HERO_T: Record<
-  Lang,
-  {
-    h1: string;
-    sub: string;
-    ph: string;
-    btn: string;
-    svcTitle: string;
-    oniLabel: string;
-    oniBtn: string;
-    sidebar: string[];
-    chatTitle: string;
-    chatGreet: string;
-    chatPh: string;
-    chatSend: string;
-    suggestTitle: string;
-    suggestSend: string;
-    suggestTo: string;
-    suggestSubj: string;
-    suggestBody: string;
-    suggestPh: string;
-    shareCopied: string;
-  }
-> = {
-  FR: {
-    h1: "Votre lien avec la Terre Natale.",
-    sub: "Accédez aux services de l'État haïtien en toute sécurité depuis l'étranger. Une infrastructure souveraine pour une diaspora connectée.",
-    ph: "Rechercher un service, un formulaire, une démarche…",
-    btn: "RECHERCHER",
-    svcTitle: "SERVICES AUX CITOYENS",
-    oniLabel: "NUMÉRO D'IDENTIFICATION UNIQUE (NINU)",
-    oniBtn: "VÉRIFIER",
-    sidebar: ["PARTAGER", "CHAT", "SUGGESTIONS", "IMPRIMER"],
-    chatTitle: "💬 Assistant MHAVE",
-    chatGreet:
-      "Bonjour ! Je suis l'assistant virtuel du MHAVE. Comment puis-je vous aider ?",
-    chatPh: "Poser une question…",
-    chatSend: "↗",
-    suggestTitle: "💡 Envoyer une suggestion",
-    suggestSend: "📧 Envoyer via messagerie",
-    suggestTo: "À",
-    suggestSubj: "Objet",
-    suggestBody: "Message",
-    suggestPh: "Votre suggestion…",
-    shareCopied: "Lien copié !",
-  },
-  HT: {
-    h1: "Lyen ou ak Tè Natif-Natal.",
-    sub: "Jwenn sèvis Eta ayisyen an san danje depi lòt bò dlo.",
-    ph: "Rechèch yon sèvis, fòmilè…",
-    btn: "CHÈCHE",
-    svcTitle: "SÈVIS POU SITWAYEN YO",
-    oniLabel: "NIMEWO IDANTIFIKASYON INIK (NINU)",
-    oniBtn: "VERIFYE",
-    sidebar: ["PATAJE", "CHAT", "SIJESYON", "ENPRIME"],
-    chatTitle: "💬 Asistan MHAVE",
-    chatGreet:
-      "Bonjou ! Mwen se asistan vityèl MHAVE a. Ki jan mwen ka ede ou ?",
-    chatPh: "Poze yon kesyon…",
-    chatSend: "↗",
-    suggestTitle: "💡 Voye yon sijesyon",
-    suggestSend: "📧 Voye via imèl",
-    suggestTo: "Pou",
-    suggestSubj: "Sijè",
-    suggestBody: "Mesaj",
-    suggestPh: "Sijesyon ou…",
-    shareCopied: "Lyen kopye !",
-  },
-  EN: {
-    h1: "Your Link to the Homeland.",
-    sub: "Access Haitian State services securely from abroad.",
-    ph: "Search for a service, form or procedure…",
-    btn: "SEARCH",
-    svcTitle: "SERVICES FOR CITIZENS",
-    oniLabel: "UNIQUE NATIONAL ID NUMBER (NINU)",
-    oniBtn: "VERIFY",
-    sidebar: ["SHARE", "CHAT", "SUGGESTIONS", "PRINT"],
-    chatTitle: "💬 MHAVE Assistant",
-    chatGreet: "Hello! I am the MHAVE virtual assistant. How can I help you?",
-    chatPh: "Ask a question…",
-    chatSend: "↗",
-    suggestTitle: "💡 Send a suggestion",
-    suggestSend: "📧 Send via email",
-    suggestTo: "To",
-    suggestSubj: "Subject",
-    suggestBody: "Message",
-    suggestPh: "Your suggestion…",
-    shareCopied: "Link copied!",
-  },
-  ESP: {
-    h1: "Su Vínculo con la Tierra Natal.",
-    sub: "Acceda a los servicios del Estado haitiano desde el exterior.",
-    ph: "Buscar un servicio, formulario…",
-    btn: "BUSCAR",
-    svcTitle: "SERVICIOS A LOS CIUDADANOS",
-    oniLabel: "NÚMERO DE IDENTIFICACIÓN ÚNICO (NINU)",
-    oniBtn: "VERIFICAR",
-    sidebar: ["COMPARTIR", "CHAT", "SUGERENCIAS", "IMPRIMIR"],
-    chatTitle: "💬 Asistente MHAVE",
-    chatGreet:
-      "¡Hola! Soy el asistente virtual del MHAVE. ¿Cómo puedo ayudarle?",
-    chatPh: "Hacer una pregunta…",
-    chatSend: "↗",
-    suggestTitle: "💡 Enviar sugerencia",
-    suggestSend: "📧 Enviar por correo",
-    suggestTo: "Para",
-    suggestSubj: "Asunto",
-    suggestBody: "Mensaje",
-    suggestPh: "Su sugerencia…",
-    shareCopied: "¡Enlace copiado!",
-  },
-};
-const SEARCH_DATA = [
-  {
-    icon: "🪪",
-    title: "Vérifier votre NINU",
-    cat: "Identité",
-    desc: "Consultez le statut de votre NINU via le portail DELIDOC ONI en ligne.",
-  },
-  {
-    icon: "📘",
-    title: "Renouvellement de passeport",
-    cat: "Documents",
-    desc: "Déposez votre demande via DELIDOC Passeport depuis l'étranger.",
-  },
-  {
-    icon: "✈️",
-    title: "Formulaire iKat — Arrivée Haïti",
-    cat: "Immigration",
-    desc: "Remplissez le formulaire digital d'arrivée obligatoire avant d'entrer en Haïti.",
-  },
-  {
-    icon: "📜",
-    title: "Extrait d'acte de naissance",
-    cat: "Archives",
-    desc: "Commandez votre extrait certifié auprès des Archives Nationales d'Haïti.",
-  },
-  {
-    icon: "💰",
-    title: "Opportunités d'investissement",
-    cat: "Économie",
-    desc: "Secteurs prioritaires et incitations fiscales pour investir en Haïti.",
-  },
-  {
-    icon: "👂",
-    title: "MHAVE à l'Écoute",
-    cat: "Contact",
-    desc: "Soumettez vos doléances ou suggestions à l'équipe MHAVE.",
-  },
-];
 
 /* ── SVC Modals data ── */
 type SvcData = {
@@ -295,623 +77,6 @@ type SvcData = {
   cta2Label: string;
   cta2Url: string;
 };
-const SVC_DATA: SvcData[] = [
-  {
-    icon: "🪪",
-    title: "IDENTITÉ DIGITALE",
-    color: "#6d28d9",
-    bg: "#ede9fe",
-    headline: "Vérifiez et gérez votre Identité Digitale haïtienne",
-    intro:
-      "Le Numéro d'Identification Unique (NINU) est l'identifiant officiel de chaque citoyen haïtien, délivré par l'Office National d'Identification (ONI). Deux plateformes officielles vous permettent de gérer votre identité en ligne.",
-    steps: [
-      "Vérifiez votre NINU (10 chiffres) via DELIDOC ONI — suivi de statut en temps réel",
-      "Carte perdue ou volée ? Déposez votre doléance sur le portail DELIDOC ONI",
-      "Vous entrez en Haïti ? Remplissez le formulaire iKat (Formulaire Digital d'Arrivée) avant votre arrivée",
-      "Pour une demande de passeport, accédez à DELIDOC Passeport — nouvelle demande ou suivi de dossier",
-      "Besoin d'aide ? Contactez l'ONI au +509 2813-1111 ou email : support@oni.gouv.ht",
-    ],
-    ctaLabel: "Accéder au portail ONI",
-    ctaUrl: "https://oni.gouv.ht",
-    cta2Label: "Première inscription ONI",
-    cta2Url: "https://oni.gouv.ht/inscription",
-  },
-  {
-    icon: "📘",
-    title: "PASSEPORTS",
-    color: "#1d4ed8",
-    bg: "#dbeafe",
-    headline:
-      "Demandez ou renouvelez votre passeport haïtien depuis l'étranger",
-    intro:
-      "Le passeport haïtien est délivré par la Direction de l'Immigration et de l'Émigration. Depuis l'étranger, initier et suivre votre demande en ligne via DELIDOC Passeport.",
-    steps: [
-      "Accédez à DELIDOC Passeport (delidoc.gouv.ht/DemandePasseport)",
-      "Créez un compte ou connectez-vous avec votre NINU",
-      "Remplissez le formulaire de demande et téléchargez vos documents",
-      "Payez les frais consulaires en ligne et soumettez votre dossier",
-      "Suivez l'avancement de votre dossier via le numéro de référence DELIDOC",
-    ],
-    ctaLabel: "DELIDOC — Demande / Suivi passeport",
-    ctaUrl: "https://delidoc.gouv.ht/DemandePasseport",
-    cta2Label: "Prendre rendez-vous au consulat",
-    cta2Url: "mailto:consulats@mhave.gouv.ht",
-  },
-  {
-    icon: "📜",
-    title: "ARCHIVES NATIONALES",
-    color: "#b45309",
-    bg: "#fef3c7",
-    headline: "Obtenez vos actes d'état civil certifiés",
-    intro:
-      "Les Archives Nationales d'Haïti conservent et délivrent les extraits d'actes d'état civil. En tant que membre de la diaspora, vous pouvez commander vos documents à distance.",
-    steps: [
-      "Identifiez le type de document (naissance, mariage, décès)",
-      "Envoyez votre demande à archives@mhave.gouv.ht avec copie de votre pièce d'identité",
-      "Joignez un justificatif de lien avec la personne concernée",
-      "Réglez les frais de traitement (variables selon l'acte)",
-      "Recevez votre document certifié sous 10–15 jours ouvrés",
-    ],
-    ctaLabel: "Demander un acte d'état civil",
-    ctaUrl: "mailto:archives@mhave.gouv.ht",
-    cta2Label: "Télécharger le formulaire",
-    cta2Url: "mailto:formulaires@mhave.gouv.ht",
-  },
-  {
-    icon: "⚖️",
-    title: "LÉGALISATION",
-    color: "#047857",
-    bg: "#d1fae5",
-    headline: "Faites légaliser ou apostiller vos documents officiels haïtiens",
-    intro:
-      "La légalisation et l'apostille permettent de faire reconnaître vos documents haïtiens dans un pays étranger. Le MHAVE coordonne ces procédures avec le Ministère des Affaires Étrangères.",
-    steps: [
-      "Rassemblez les documents originaux (actes notariés, diplômes, actes civils)",
-      "Légalisez d'abord auprès du Ministère de la Justice haïtien",
-      "Soumettez au Ministère des Affaires Étrangères pour l'apostille",
-      "Si vous êtes à l'étranger, contactez le consulat haïtien compétent",
-      "Délai : 5 à 10 jours ouvrés selon le type de document",
-    ],
-    ctaLabel: "Demander une légalisation",
-    ctaUrl: "mailto:legalisation@mhave.gouv.ht",
-    cta2Label: "Contacter le consulat compétent",
-    cta2Url: "mailto:consulats@mhave.gouv.ht",
-  },
-];
-
-/* ── Nav pages ── */
-type Section = {
-  icon: string;
-  label: string;
-  content: string;
-  items: string[];
-  ctaLabel?: string;
-  ctaUrl?: string;
-};
-type NavPage = { title: string; color: string; sections: Section[] };
-const NAV_PAGES: (NavPage | null)[] = [
-  null,
-  {
-    title: "Présentation du MHAVE",
-    color: "#002060",
-    sections: [
-      {
-        icon: "🎯",
-        label: "Mission & Vision",
-        content:
-          "Le MHAVE est l'interface officielle entre le gouvernement haïtien et les 4 millions de membres de la diaspora répartis dans plus de 35 pays.",
-        items: [
-          "Renforcer les liens entre Haïti et sa diaspora",
-          "Faciliter l'accès aux services de l'État depuis l'étranger",
-          "Promouvoir les investissements de la diaspora en Haïti",
-          "Protéger les droits des Haïtiens à l'étranger",
-          "Valoriser l'identité culturelle haïtienne dans le monde",
-        ],
-      },
-      {
-        icon: "🏛️",
-        label: "Organigramme",
-        content:
-          "Le MHAVE est dirigé par une Ministre et structuré en plusieurs directions générales.",
-        items: [
-          "Ministre — Kathia Verdier",
-          "Direction Générale des Services Consulaires",
-          "Direction des Relations avec la Diaspora",
-          "Direction des Investissements et du Développement",
-          "Direction Administrative et Financière",
-          "Direction de la Communication",
-        ],
-      },
-      {
-        icon: "👥",
-        label: "Personnel MHAVE",
-        content:
-          "Plus de 200 agents répartis entre le siège à Musseau et les représentations diplomatiques à travers le monde.",
-        items: [
-          "Siège central – Musseau, Port-au-Prince",
-          "Représentation – Miami, Florida, USA",
-          "Représentation – Montréal, Québec, Canada",
-          "Représentation – Paris, France",
-          "Représentation – Santo Domingo, RD",
-          "Représentation – New York, USA",
-        ],
-      },
-      {
-        icon: "⚖️",
-        label: "Cadre légal",
-        content:
-          "Le MHAVE opère dans le cadre de la Constitution de 1987 et de la Directive 001/IHSI/2026.",
-        items: [
-          "Constitution haïtienne de 1987 — Articles 12-1",
-          "Décret portant création du MHAVE",
-          "Directive 001/IHSI/2026 — Gouvernance Électronique",
-          "Convention de Vienne sur les relations consulaires",
-          "Accords bilatéraux de protection des ressortissants",
-        ],
-      },
-    ],
-  },
-  {
-    title: "Services aux citoyens",
-    color: "#1d4ed8",
-    sections: [
-      {
-        icon: "🪪",
-        label: "Identité Digitale (NINU/ONI)",
-        content:
-          "Le NINU est l'identifiant officiel de chaque citoyen haïtien, géré par l'ONI.",
-        items: [
-          "Vérification NINU via DELIDOC ONI",
-          "Première inscription ONI en ligne",
-          "Déclaration de perte ou vol de carte",
-          "Suivi de dossier en temps réel",
-          "Lien : delidoc.gouv.ht/doleanceoni/Status",
-        ],
-        ctaLabel: "Accéder à DELIDOC ONI",
-        ctaUrl: "https://delidoc.gouv.ht/doleanceoni/Status",
-      },
-      {
-        icon: "📘",
-        label: "Passeports — DELIDOC",
-        content:
-          "Déposez votre demande de passeport ou suivez votre dossier via DELIDOC Passeport.",
-        items: [
-          "Nouvelle demande de passeport en ligne",
-          "Suivi de dossier avec numéro de référence",
-          "Documents requis : NINU, acte de naissance, photo",
-          "Délai moyen : 4–8 semaines",
-          "Lien : delidoc.gouv.ht/DemandePasseport",
-        ],
-        ctaLabel: "DELIDOC — Passeport",
-        ctaUrl: "https://delidoc.gouv.ht/DemandePasseport",
-      },
-      {
-        icon: "✈️",
-        label: "iKat — Formulaire d'Arrivée",
-        content:
-          "Le formulaire iKat est obligatoire pour toute personne entrant en Haïti.",
-        items: [
-          "À remplir avant votre arrivée en Haïti",
-          "Collecte d'informations pour les autorités d'immigration",
-          "Disponible en ligne 24h/24",
-          "Gratuit et rapide (moins de 5 minutes)",
-          "Lien : delidoc.gouv.ht/ikat/fr",
-        ],
-        ctaLabel: "Remplir le formulaire iKat",
-        ctaUrl: "https://delidoc.gouv.ht/ikat/fr",
-      },
-      {
-        icon: "📜",
-        label: "Archives & Légalisation",
-        content:
-          "Extraits d'actes civils certifiés et légalisation de documents officiels.",
-        items: [
-          "Extrait d'acte de naissance, mariage, décès",
-          "Apostille et légalisation consulaire",
-          "Délai : 10–15 jours ouvrés",
-          "Contact : archives@mhave.gouv.ht",
-          "Reconnaissance des diplômes haïtiens",
-        ],
-        ctaLabel: "Demander un acte civil",
-        ctaUrl: "mailto:archives@mhave.gouv.ht",
-      },
-    ],
-  },
-  {
-    title: "Démarches Administratives",
-    color: "#0f766e",
-    sections: [
-      {
-        icon: "💰",
-        label: "Opportunités d'investissement",
-        content:
-          "Haïti offre des opportunités dans l'agro-industrie, le tourisme, l'énergie renouvelable et le numérique.",
-        items: [
-          "Secteurs prioritaires identifiés par l'État",
-          "Exonérations fiscales pour la diaspora",
-          "Accompagnement juridique et administratif",
-          "Réseau de partenaires locaux et internationaux",
-          "Centre d'appui aux entrepreneurs de la diaspora",
-        ],
-        ctaLabel: "Explorer les opportunités",
-        ctaUrl: "mailto:investissement@mhave.gouv.ht",
-      },
-      {
-        icon: "📋",
-        label: "Formulaires en ligne",
-        content:
-          "Téléchargez ou remplissez les formulaires administratifs du MHAVE et des institutions partenaires.",
-        items: [
-          "Formulaire de demande d'acte d'état civil",
-          "Demande de légalisation de documents",
-          "Formulaire de plainte ou réclamation",
-          "Inscription au registre de la diaspora",
-          "Demande de certificat de résidence à l'étranger",
-        ],
-        ctaLabel: "Accéder aux formulaires",
-        ctaUrl: "mailto:formulaires@mhave.gouv.ht",
-      },
-      {
-        icon: "🏛️",
-        label: "Procédures consulaires",
-        content:
-          "Informations sur les démarches auprès des consulats haïtiens dans votre pays de résidence.",
-        items: [
-          "Trouver le consulat le plus proche",
-          "Prise de rendez-vous en ligne",
-          "Documents requis par type de service",
-          "Tarifs consulaires en vigueur 2026",
-          "Services d'urgence consulaire",
-        ],
-        ctaLabel: "Trouver un consulat",
-        ctaUrl: "mailto:consulats@mhave.gouv.ht",
-      },
-    ],
-  },
-  {
-    title: "Identité Culturelle Haïtienne",
-    color: "#7c3aed",
-    sections: [
-      {
-        icon: "🎭",
-        label: "Patrimoine & Traditions",
-        content:
-          "Haïti est une nation riche d'une culture millénaire, première République noire libre du monde.",
-        items: [
-          "Carnaval national — février chaque année",
-          "Fête du Drapeau — 18 mai",
-          "Indépendance 1804 — 1er janvier",
-          "Le vodou — patrimoine UNESCO",
-          "La peinture naïve haïtienne",
-          "La musique : kompa, rasin, twoubadou",
-        ],
-      },
-      {
-        icon: "🗣️",
-        label: "Langue créole",
-        content:
-          "Le créole haïtien (kreyòl ayisyen) est l'une des deux langues officielles d'Haïti.",
-        items: [
-          "Cours de créole en ligne pour la diaspora",
-          "Dictionnaire officiel kreyòl–français",
-          "Ressources pédagogiques pour les enfants",
-          "Événements culturels dans la diaspora",
-          "Centres culturels haïtiens à l'étranger",
-        ],
-      },
-      {
-        icon: "🍽️",
-        label: "Gastronomie haïtienne",
-        content:
-          "Griot, diri ak djon-djon, accra, tassot — des saveurs qui voyagent avec la diaspora.",
-        items: [
-          "Recettes traditionnelles haïtiennes",
-          "Produits haïtiens exportés",
-          "Restaurants haïtiens dans le monde",
-          "Festivals gastronomiques de la diaspora",
-          "Promotion de la cuisine haïtienne à l'UNESCO",
-        ],
-      },
-    ],
-  },
-  null,
-  {
-    title: "Nous Contacter",
-    color: "#374151",
-    sections: [
-      {
-        icon: "🏛️",
-        label: "Siège du MHAVE",
-        content:
-          "Le siège est situé à Musseau, Port-au-Prince. Disponible du lundi au vendredi de 8h00 à 16h00.",
-        items: [
-          "Adresse : Route de Musseau, Port-au-Prince",
-          "Téléphone : +509 2813-0000",
-          "Email : contact@mhave.gouv.ht",
-          "Horaires : Lun–Ven, 08h00–16h00 HAT",
-          "Accès GPS : 18.5558° N, 72.3348° W",
-        ],
-        ctaLabel: "Envoyer un email",
-        ctaUrl: "mailto:contact@mhave.gouv.ht",
-      },
-      {
-        icon: "🌐",
-        label: "Répertoire consulaire",
-        content: "Le MHAVE est représenté dans plus de 20 pays.",
-        items: [
-          "Miami (USA) — +1 305-859-4670",
-          "New York (USA) — +1 212-477-6350",
-          "Montréal (Canada) — +1 514-499-1919",
-          "Paris (France) — +33 1 47 63 47 78",
-          "Santo Domingo (RD) — +1 809-686-5778",
-          "Genève (Suisse) — +41 22 716 00 00",
-        ],
-        ctaLabel: "Voir tous les consulats",
-        ctaUrl: "mailto:consulats@mhave.gouv.ht",
-      },
-      {
-        icon: "👂",
-        label: "MHAVE à l'Écoute",
-        content:
-          "Notre centre d'appel reçoit vos doléances, suggestions et demandes d'information.",
-        items: [
-          "Centre d'appel : +509 2813-0001",
-          "WhatsApp : +509 3700-0000",
-          "Email : ecoute@mhave.gouv.ht",
-          "Formulaire en ligne 24h/24",
-          "Délai de réponse : 48–72 heures ouvrées",
-        ],
-        ctaLabel: "Soumettre une demande",
-        ctaUrl: "mailto:ecoute@mhave.gouv.ht",
-      },
-    ],
-  },
-];
-
-/* ── Tile modal data ── */
-type TileData = {
-  color: string;
-  label: string;
-  icon: string;
-  headline: string;
-  intro: string;
-  sections: { icon: string; title: string; items: string[] }[];
-  ctaLabel: string;
-  ctaUrl: string;
-  cta2Label?: string;
-  cta2Url?: string;
-};
-const TILE_DATA: TileData[] = [
-  {
-    color: "#1d4ed8",
-    label: "VIVRE À L'ÉTRANGER",
-    icon: "🏠",
-    headline:
-      "Tout ce qu'il faut savoir pour vivre à l'étranger en tant qu'Haïtien",
-    intro:
-      "Des millions d'Haïtiens vivent à l'étranger. Le MHAVE est votre point de contact officiel pour protéger vos droits, faciliter vos démarches et maintenir votre lien avec Haïti.",
-    sections: [
-      {
-        icon: "📋",
-        title: "Formalités administratives",
-        items: [
-          "Renouvellement de passeport via DELIDOC",
-          "Inscription au registre consulaire de la diaspora",
-          "Procuration et actes notariés à distance",
-          "Déclaration de résidence à l'étranger",
-          "Documents d'état civil certifiés à distance",
-        ],
-      },
-      {
-        icon: "⚖️",
-        title: "Droits et protections",
-        items: [
-          "Protection consulaire en cas d'urgence",
-          "Assistance juridique pour les ressortissants",
-          "Droits successoraux pour les biens en Haïti",
-          "Accès aux services sociaux haïtiens",
-          "Urgence : +509 2813-0000 (24h/24)",
-        ],
-      },
-      {
-        icon: "🔗",
-        title: "Rester connecté à Haïti",
-        items: [
-          "Portail e-gov MHAVE — services en ligne",
-          "Newsletter mensuelle de la diaspora",
-          "Groupes communautaires officiels MHAVE",
-          "Événements culturels dans votre pays",
-          "Programme de retour volontaire en Haïti",
-        ],
-      },
-    ],
-    ctaLabel: "S'inscrire au registre consulaire",
-    ctaUrl: "mailto:registre@mhave.gouv.ht",
-  },
-  {
-    color: "#0f766e",
-    label: "VENIR EN HAÏTI",
-    icon: "✈️",
-    headline: "Préparez votre voyage ou votre retour en Haïti",
-    intro:
-      "Que vous visitiez Haïti ou envisagiez un retour définitif, le MHAVE vous accompagne dans toutes vos démarches d'immigration, de douanes et d'installation.",
-    sections: [
-      {
-        icon: "🛂",
-        title: "iKat — Formulaire Digital d'Arrivée",
-        items: [
-          "Formulaire obligatoire pour TOUTE personne entrant en Haïti",
-          "À remplir en ligne avant votre arrivée",
-          "Gratuit et rapide (moins de 5 minutes)",
-          "Disponible à : delidoc.gouv.ht/ikat/fr",
-          "Collecte d'informations pour les autorités d'immigration",
-        ],
-      },
-      {
-        icon: "🧳",
-        title: "Douanes & Bagages",
-        items: [
-          "Franchise douanière diaspora : jusqu'à $800 USD",
-          "Importation de véhicules — procédures et taxes",
-          "Envoi de marchandises depuis l'étranger (barrel)",
-          "Déclaration de devises > $10 000 USD",
-          "Contact AGD : douanes.gouv.ht",
-        ],
-      },
-      {
-        icon: "🏡",
-        title: "Installation & Retour",
-        items: [
-          "Programme d'accompagnement au retour MHAVE",
-          "Logement temporaire pour diaspora retournante",
-          "Accès aux services de santé publique",
-          "Inscription scolaire pour enfants retournants",
-          "Réseau de soutien à la réinsertion professionnelle",
-        ],
-      },
-    ],
-    ctaLabel: "Préparer mon voyage en Haïti",
-    ctaUrl: "https://immigration.gouv.ht",
-    cta2Label: "Remplir le formulaire iKat",
-    cta2Url: "https://delidoc.gouv.ht/ikat/fr",
-  },
-  {
-    color: "#b45309",
-    label: "INVESTIR EN HAÏTI",
-    icon: "💰",
-    headline: "Investissez dans l'avenir d'Haïti avec le soutien du MHAVE",
-    intro:
-      "La diaspora haïtienne représente plus de 3,8 milliards USD de transferts annuels. Le MHAVE vous accompagne pour transformer cette force en investissements durables.",
-    sections: [
-      {
-        icon: "🏭",
-        title: "Secteurs prioritaires",
-        items: [
-          "Agro-industrie & transformation alimentaire",
-          "Tourisme & hôtellerie",
-          "Énergie renouvelable (solaire, éolien)",
-          "Services numériques & fintech",
-          "Textile & manufactures",
-          "Éducation & santé privée",
-        ],
-      },
-      {
-        icon: "💼",
-        title: "Incitations fiscales",
-        items: [
-          "Exonération de droits douaniers sur équipements",
-          "Congé fiscal de 5 à 15 ans selon secteur",
-          "Rapatriement libre des profits",
-          "Accès aux zones franches industrielles",
-          "Protection des investissements par la loi",
-        ],
-      },
-      {
-        icon: "🤝",
-        title: "Accompagnement MHAVE",
-        items: [
-          "Mise en relation avec partenaires locaux",
-          "Assistance dans les démarches légales",
-          "Accès aux financements (BRH, SOFIHDES)",
-          "Réseau d'entrepreneurs de la diaspora",
-          "Ateliers d'investissement MHAVE",
-        ],
-      },
-    ],
-    ctaLabel: "Soumettre un projet d'investissement",
-    ctaUrl: "mailto:investissement@mhave.gouv.ht",
-  },
-  {
-    color: "#7c3aed",
-    label: "MHAVE À L'ÉCOUTE",
-    icon: "👂",
-    headline: "Le MHAVE est à l'écoute de la diaspora haïtienne",
-    intro:
-      "MHAVE à l'Écoute est notre centre dédié à la réception des doléances, plaintes, suggestions et demandes d'information. Votre voix est importante.",
-    sections: [
-      {
-        icon: "📞",
-        title: "Nous contacter",
-        items: [
-          "Centre d'appel : +509 2813-0001 (Lun–Ven 8h–16h)",
-          "WhatsApp : +509 3700-0000",
-          "Email : ecoute@mhave.gouv.ht",
-          "Formulaire en ligne : disponible 24h/24",
-          "Délai de réponse garanti : 48–72h ouvrées",
-        ],
-      },
-      {
-        icon: "📝",
-        title: "Types de demandes",
-        items: [
-          "Doléances concernant les services consulaires",
-          "Signalement de problèmes administratifs",
-          "Suggestions d'amélioration des services",
-          "Demandes d'information sur les démarches",
-          "Urgences consulaires (passeport, détention, décès)",
-        ],
-      },
-      {
-        icon: "📊",
-        title: "Notre engagement",
-        items: [
-          "100% des messages reçoivent une réponse",
-          "Rapport trimestriel public des doléances",
-          "Amélioration continue basée sur vos retours",
-          "Protection de la confidentialité RGPD",
-          "Conformité Directive 001/IHSI/2026",
-        ],
-      },
-    ],
-    ctaLabel: "Soumettre une demande",
-    ctaUrl: "mailto:ecoute@mhave.gouv.ht",
-  },
-  {
-    color: "#374151",
-    label: "PROCÉDURES MHAVE",
-    icon: "💼",
-    headline: "Guide complet des procédures administratives du MHAVE",
-    intro:
-      "Formulaires à télécharger, délais de traitement, documents requis et contacts des services compétents pour chaque démarche administrative.",
-    sections: [
-      {
-        icon: "📄",
-        title: "Formulaires disponibles",
-        items: [
-          "Demande d'acte d'état civil (PDF)",
-          "Demande de légalisation de documents (PDF)",
-          "Inscription au registre de la diaspora (en ligne)",
-          "Formulaire de plainte ou réclamation (PDF)",
-          "Demande de certificat consulaire (en ligne)",
-        ],
-      },
-      {
-        icon: "⏱️",
-        title: "Délais de traitement",
-        items: [
-          "Acte d'état civil : 10–15 jours ouvrés",
-          "Légalisation / apostille : 5–10 jours ouvrés",
-          "Inscription consulaire : immédiate en ligne",
-          "Passeport DELIDOC : 4–8 semaines",
-          "Réponse MHAVE à l'Écoute : 48–72h",
-        ],
-      },
-      {
-        icon: "📬",
-        title: "Envoi de dossiers",
-        items: [
-          "Par email : formulaires@mhave.gouv.ht",
-          "Par courrier : Route de Musseau, Port-au-Prince",
-          "En personne : consulat haïtien le plus proche",
-          "En ligne via le portail DELIDOC",
-          "WhatsApp suivi : +509 3700-0000",
-        ],
-      },
-    ],
-    ctaLabel: "Télécharger les formulaires",
-    ctaUrl: "mailto:formulaires@mhave.gouv.ht",
-  },
-];
 
 /* ══ FullModal ══ */
 function FullModal({
@@ -1015,13 +180,17 @@ function Crumb({ parts, onHome }: { parts: string[]; onHome: () => void }) {
 /* ══ MAIN ══ */
 export default function MhavelHsiSovereignPortal() {
 
-  // translation
-  const t=useTranslations("HeroSection")
+  // translations
+  const t = useTranslations("HeroSection");
+  const navT = useTranslations("Navigation");
+  const tilesT = useTranslations("Tiles");
+  const searchT = useTranslations("Search");
+  const servicesT = useTranslations("Services");
+  const navPagesT = useTranslations("NavPages");
+  const tileModalsT = useTranslations("TileModals");
+
   const params = useParams();
   const currentLocale = (params?.locale as string) || 'fr';
-  const localeToLang: Record<string, Lang> = { fr: 'FR', ht: 'HT', en: 'EN', es: 'ESP' };
-  const currentLang = localeToLang[currentLocale] || 'FR';
-  const [lang, setLang] = useState<Lang>(currentLang);
   const [modal, setModal] = useState<ModalKey>(null);
   const [nntvOpen, setNntvOpen] = useState(false);
   const [nntvTab, setNntvTab] = useState("live");
@@ -1036,7 +205,7 @@ export default function MhavelHsiSovereignPortal() {
     null
   );
   const [searchQ, setSearchQ] = useState("");
-  const [searchRes, setSearchRes] = useState<typeof SEARCH_DATA | null>(null);
+  const [searchRes, setSearchRes] = useState<{ icon: string; title: string; cat: string; desc: string }[] | null>(null);
   const [chatMsg, setChatMsg] = useState("");
   const [chatHist, setChatHist] = useState<{ me: boolean; txt: string }[]>([]);
   const [sTo, setSTo] = useState("contact@mhave.gouv.ht");
@@ -1044,9 +213,13 @@ export default function MhavelHsiSovereignPortal() {
   const [sBody, setSBody] = useState("");
   const chatEnd = useRef<HTMLDivElement>(null);
 
-  const ht = HERO_T[lang];
-  const nav = NAV_LABELS[lang];
-  const tiles = TILES[lang];
+  // Get translated data
+  const navLabels = navT.raw("labels") as string[];
+  const tilesItems = tilesT.raw("items") as { label: string; icon: string }[];
+  const searchItems = searchT.raw("items") as { icon: string; title: string; cat: string; desc: string }[];
+  const navPagesData = navPagesT.raw("pages") as { title: string; color: string; sections: { icon: string; label: string; content: string; items: string[]; ctaLabel?: string; ctaUrl?: string }[] }[];
+  const servicesData = servicesT.raw("items") as { icon: string; title: string; color: string; bg: string; headline: string; intro: string; steps: string[]; ctaLabel: string; ctaUrl: string; cta2Label: string; cta2Url: string }[];
+  const tileModalsData = tileModalsT.raw("items") as { color: string; label: string; icon: string; headline: string; intro: string; sections: { icon: string; title: string; items: string[] }[]; ctaLabel: string; ctaUrl: string; cta2Label?: string; cta2Url?: string }[];
   useEffect(() => {
     chatEnd.current?.scrollIntoView({ behavior: "smooth" });
   }, [chatHist]);
@@ -1054,13 +227,13 @@ export default function MhavelHsiSovereignPortal() {
   function doSearch() {
     if (!searchQ.trim()) return;
     const q = searchQ.toLowerCase();
-    const f = SEARCH_DATA.filter(
+    const f = searchItems.filter(
       (r) =>
         r.title.toLowerCase().includes(q) ||
         r.desc.toLowerCase().includes(q) ||
         r.cat.toLowerCase().includes(q)
     );
-    setSearchRes(f.length ? f : SEARCH_DATA.slice(0, 3));
+    setSearchRes(f.length ? f : searchItems.slice(0, 3));
     setModal("search");
   }
   function doNinu() {
@@ -1076,14 +249,15 @@ export default function MhavelHsiSovereignPortal() {
     const m = chatMsg.trim();
     setChatHist((h) => [...h, { me: true, txt: m }]);
     setChatMsg("");
-    const replies: Record<Lang, string> = {
+    type LangKey = "FR" | "HT" | "EN" | "ESP";
+    const replies: Record<LangKey, string> = {
       FR: `Merci pour votre question sur « ${m} ». Pour plus d'informations, visitez mhave.gouv.ht ou contactez-nous à contact@mhave.gouv.ht.`,
       HT: `Mèsi pou kesyon w sou « ${m} ». Pou plis enfòmasyon, vizite mhave.gouv.ht oswa kontakte nou nan contact@mhave.gouv.ht.`,
       EN: `Thank you for your question about « ${m} ». For more information, visit mhave.gouv.ht or contact us at contact@mhave.gouv.ht.`,
       ESP: `Gracias por su pregunta sobre « ${m} ». Para más información, visite mhave.gouv.ht o contáctenos en contact@mhave.gouv.ht.`,
     };
     setTimeout(
-      () => setChatHist((h) => [...h, { me: false, txt: replies[lang] }]),
+      () => setChatHist((h) => [...h, { me: false, txt: replies[currentLocale.toUpperCase() as LangKey] }]),
       900
     );
   }
@@ -1254,7 +428,7 @@ export default function MhavelHsiSovereignPortal() {
           </div>
         </div>
         <nav style={{ display: "flex", flexWrap: "wrap", gap: 0 }}>
-          {nav.map((item, i) => (
+          {navLabels.map((item: string, i: number) => (
             <button
               key={i}
               onClick={() => {
@@ -1313,13 +487,13 @@ export default function MhavelHsiSovereignPortal() {
         </nav>
         <div style={{ display: "flex", gap: 3 }}>
           {LANGS.map((l) => {
-            const localeMap: Record<Lang, string> = { FR: 'fr', HT: 'ht', EN: 'en', ESP: 'es' };
-            const isActive = currentLang === l;
+            const localeMap: Record<string, string> = { FR: 'fr', HT: 'ht', EN: 'en', ESP: 'es' };
+            const targetLocale = localeMap[l];
+            const isActive = currentLocale.toUpperCase() === l;
             return (
               <Link
                 key={l}
-                href="/"
-                locale={localeMap[l]}
+                href={`/${targetLocale}`}
                 style={{
                   background: isActive ? C.bord : "transparent",
                   border: `1px solid ${isActive ? C.bord : "#375080"}`,
@@ -1376,7 +550,7 @@ export default function MhavelHsiSovereignPortal() {
             lineHeight: 1.8,
           }}
         >
-          {ht.sub}
+          {t("sub")}
         </p>
         <div
           className="mh-srow"
@@ -1403,7 +577,7 @@ export default function MhavelHsiSovereignPortal() {
               value={searchQ}
               onChange={(e) => setSearchQ(e.target.value)}
               onKeyDown={(e) => e.key === "Enter" && doSearch()}
-              placeholder={ht.ph}
+              placeholder={t("ph")}
               style={{
                 flex: 1,
                 padding: "13px 16px",
@@ -1422,7 +596,7 @@ export default function MhavelHsiSovereignPortal() {
                 letterSpacing: 0.5,
               })}
             >
-              {ht.btn}
+              {t("btn")}
             </button>
           </div>
           <button
@@ -1481,7 +655,7 @@ export default function MhavelHsiSovereignPortal() {
               gap: 10,
             }}
           >
-            {tiles.map((t, i) => (
+            {tilesItems.map((t: {label: string, icon: string}, i: number) => (
               <button
                 key={i}
                 onClick={() => setModal(`tile-${i}`)}
@@ -1547,7 +721,7 @@ export default function MhavelHsiSovereignPortal() {
                 marginBottom: 8,
               }}
             >
-              {ht.svcTitle}
+              {t("svcTitle")}
             </h2>
             <div
               style={{
@@ -1567,7 +741,7 @@ export default function MhavelHsiSovereignPortal() {
               gap: 16,
             }}
           >
-            {SVC_DATA.map((s, i) => (
+            {servicesData.map((s, i) => (
               <button
                 key={i}
                 onClick={() => setModal(`svc-${i}`)}
@@ -1691,7 +865,7 @@ export default function MhavelHsiSovereignPortal() {
                   marginBottom: 7,
                 }}
               >
-                {ht.oniLabel}
+                {t("oniLabel")}
               </label>
               <input
                 value={ninu}
@@ -1780,7 +954,7 @@ export default function MhavelHsiSovereignPortal() {
                 fontSize: 13,
               })}
             >
-              {ht.oniBtn}
+              {t("oniBtn")}
             </button>
           </div>
           <div style={{ padding: "0 22px 12px" }}>
@@ -1890,7 +1064,8 @@ export default function MhavelHsiSovereignPortal() {
             { id: "print", icon: "🖨️", bg: "#374151" },
           ] as { id: string; icon: string; bg: string }[]
         ).map((btn, i, arr) => {
-          const label = ht.sidebar[i];
+          const sidebarLabels = t.raw("sidebar") as string[];
+          const label = sidebarLabels[i];
           return (
             <button
               key={btn.id}
@@ -1905,7 +1080,7 @@ export default function MhavelHsiSovereignPortal() {
                   else
                     navigator.clipboard
                       .writeText(window.location.href)
-                      .then(() => alert(ht.shareCopied));
+                      .then(() => alert(t("shareCopied")));
                 } else if (btn.id === "chat") {
                   setChatOpen((p) => !p);
                   setSuggestOpen(false);
@@ -1978,7 +1153,7 @@ export default function MhavelHsiSovereignPortal() {
             }}
           >
             <span style={{ color: C.white, fontSize: 12, fontWeight: 700 }}>
-              {ht.chatTitle}
+              {t("chatTitle")}
             </span>
             <button
               onClick={() => setChatOpen(false)}
@@ -2014,7 +1189,7 @@ export default function MhavelHsiSovereignPortal() {
                 lineHeight: 1.6,
               }}
             >
-              {ht.chatGreet}
+              {t("chatGreet")}
             </div>
             {chatHist.map((m, i) => (
               <div
@@ -2047,7 +1222,7 @@ export default function MhavelHsiSovereignPortal() {
               value={chatMsg}
               onChange={(e) => setChatMsg(e.target.value)}
               onKeyDown={(e) => e.key === "Enter" && sendChat()}
-              placeholder={ht.chatPh}
+              placeholder={t("chatPh")}
               style={{
                 flex: 1,
                 padding: "7px 9px",
@@ -2061,7 +1236,7 @@ export default function MhavelHsiSovereignPortal() {
               onClick={sendChat}
               style={BS(C.bord, { padding: "7px 12px", fontSize: 11 })}
             >
-              {ht.chatSend}
+              {t("chatSend")}
             </button>
           </div>
         </div>
@@ -2092,7 +1267,7 @@ export default function MhavelHsiSovereignPortal() {
             }}
           >
             <span style={{ color: C.white, fontSize: 12, fontWeight: 700 }}>
-              {ht.suggestTitle}
+              {t("suggestTitle")}
             </span>
             <button
               onClick={() => setSuggestOpen(false)}
@@ -2117,8 +1292,8 @@ export default function MhavelHsiSovereignPortal() {
           >
             {(
               [
-                [ht.suggestTo, sTo, setSTo, ""],
-                [ht.suggestSubj, sSubj, setSSubj, `${ht.suggestSubj} – MHAVE`],
+                [t("suggestTo"), sTo, setSTo, ""],
+                [t("suggestSubj"), sSubj, setSSubj, `${t("suggestSubj")} – MHAVE`],
               ] as [string, string, (v: string) => void, string][]
             ).map(([lbl, val, set, ph]) => (
               <div key={lbl}>
@@ -2157,13 +1332,13 @@ export default function MhavelHsiSovereignPortal() {
                   marginBottom: 3,
                 }}
               >
-                {ht.suggestBody}
+                {t("suggestBody")}
               </div>
               <textarea
                 value={sBody}
                 onChange={(e) => setSBody(e.target.value)}
                 rows={3}
-                placeholder={ht.suggestPh}
+                placeholder={t("suggestPh")}
                 style={{
                   width: "100%",
                   padding: "8px 10px",
@@ -2185,7 +1360,7 @@ export default function MhavelHsiSovereignPortal() {
                 fontSize: 11,
               })}
             >
-              {ht.suggestSend}
+              {t("suggestSend")}
             </button>
           </div>
         </div>
@@ -2196,13 +1371,13 @@ export default function MhavelHsiSovereignPortal() {
         modal.startsWith("nav-") &&
         (() => {
           const idx = parseInt(modal.replace("nav-", ""));
-          const page = NAV_PAGES[idx];
+          const page = navPagesData[idx];
           if (!page) return null;
           return (
             <FullModal onClose={closeModal}>
               <ModalHdr
                 color={`linear-gradient(135deg,${page.color},${page.color}dd)`}
-                parts={[nav[idx]]}
+                parts={[navLabels[idx]]}
               />
               <div
                 style={{
@@ -2637,7 +1812,7 @@ export default function MhavelHsiSovereignPortal() {
         modal.startsWith("svc-") &&
         (() => {
           const idx = parseInt(modal.replace("svc-", ""));
-          const s = SVC_DATA[idx];
+          const s = servicesData[idx];
           return (
             <FullModal onClose={closeModal}>
               <ModalHdr
@@ -2947,7 +2122,7 @@ export default function MhavelHsiSovereignPortal() {
         modal.startsWith("tile-") &&
         (() => {
           const idx = parseInt(modal.replace("tile-", ""));
-          const td = TILE_DATA[idx];
+          const td = tileModalsData[idx];
           if (!td) return null;
           return (
             <FullModal onClose={closeModal}>
@@ -3166,7 +2341,7 @@ export default function MhavelHsiSovereignPortal() {
             >
               {searchRes?.length} résultat(s) trouvé(s) pour «{searchQ}»
             </div>
-            {searchRes?.map((r, i) => (
+            {searchRes?.map((r: {icon: string; title: string; cat: string; desc: string}, i: number) => (
               <div
                 key={i}
                 style={{
@@ -3251,10 +2426,9 @@ export default function MhavelHsiSovereignPortal() {
               padding: "11px 20px",
               display: "flex",
               alignItems: "center",
-              gap: 12,
+              gap: 8,
               flexShrink: 0,
               flexWrap: "wrap",
-              gap: 8,
             }}
           >
             <button
