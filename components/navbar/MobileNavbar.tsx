@@ -19,13 +19,15 @@ import { C, LOGO, NAV_ROUTES } from '@/constants';
 
 import { useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
-
-
+import { useParams } from "next/navigation";
+type Lang = "FR" | "HT" | "EN" | "ESP";
 const MobileNavbar = () => {
  const navT = useTranslations("Navigation");
- 
+ const LANGS: Lang[] = ["FR", "HT", "EN", "ESP"];
     const pathname = usePathname();
      const navLabels = navT.raw("labels") as string[];
+      const params = useParams();
+     const currentLocale = (params?.locale as string) || 'fr';
   return (
     <div className='md:hidden z-99'>
       <Sheet>
@@ -139,6 +141,34 @@ const MobileNavbar = () => {
                  </nav>
                  <Separator/>
 
+ <div  className="md:hidden flex gap-6 items-center mt-8">
+          {LANGS.map((l) => {
+            const localeMap: Record<string, string> = { FR: 'fr', HT: 'ht', EN: 'en', ESP: 'es' };
+            const targetLocale = localeMap[l];
+            const isActive = currentLocale.toUpperCase() === l;
+            return (
+              <Link
+                key={l}
+                href="/"
+                locale={targetLocale}
+                style={{
+                  background: isActive ? C.bord : C.navy,
+                  border: `1px solid ${isActive ? C.bord : "#375080"}`,
+                  color: C.white,
+                  fontSize: 10,
+                  fontWeight: isActive ? 700 : 400,
+                  padding: "3px 7px",
+                  borderRadius: 4,
+                  cursor: "pointer",
+                  fontFamily: "inherit",
+                  textDecoration: "none",
+                }}
+              >
+                {l}
+              </Link>
+            );
+          })}
+        </div>
             
             <SheetHeader>
             <SheetTitle>MHAVE</SheetTitle>
