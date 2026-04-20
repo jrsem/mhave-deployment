@@ -436,7 +436,7 @@ export default function MhavelHsiSovereignPortal() {
 
         <div className="hidden md:flex flex-col">
           <div
-            className="text-navy font-bold text-sm leading-tight"
+            className="text-white font-bold text-sm leading-tight"
           >
             Ministère des Haïtiens
           </div>
@@ -452,7 +452,7 @@ export default function MhavelHsiSovereignPortal() {
             Vivant à l&apos;Étranger –{" "}
             <span style={{ color: "#fca5a5" }} className="text-red!">MHAVE</span>
           </div>
-          <div style={{ color: C.muted, fontSize: 8, marginTop: 1 }} className="text-dark!">
+          <div style={{ color: C.muted, fontSize: 10, marginTop: 1 }} className="text-white!">
             mhave.gouv.ht
           </div>
         </div>
