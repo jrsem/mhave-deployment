@@ -1,5 +1,5 @@
 "use client"
-import React from 'react'
+import React, { useState } from 'react'
 import { RiMenu3Fill } from "react-icons/ri";
 import {
   Sheet,
@@ -20,14 +20,27 @@ import { C, LOGO, NAV_ROUTES } from '@/constants';
 import { useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
 import { useParams } from "next/navigation";
+
+
 type Lang = "FR" | "HT" | "EN" | "ESP";
+type ModalKey = null | string;
+
+
+
 const MobileNavbar = () => {
  const navT = useTranslations("Navigation");
  const LANGS: Lang[] = ["FR", "HT", "EN", "ESP"];
     const pathname = usePathname();
      const navLabels = navT.raw("labels") as string[];
       const params = useParams();
+        const [nntvOpen, setNntvOpen] = useState(false);
+          const [modal, setModal] = useState<ModalKey>(null);
      const currentLocale = (params?.locale as string) || 'fr';
+
+       function closeModal() {
+    setModal(null);
+  }
+  
   return (
     <div className='md:hidden z-99'>
       <Sheet>
@@ -90,57 +103,69 @@ const MobileNavbar = () => {
            <Separator/>
 
             {/* Navigation */}
-                 <nav className="md:hidden flex flex-col">
-                   {navLabels.map((item: string, i: number) => {
-                     const route = NAV_ROUTES[i];
-                     const isActive =
-                       route === "/"
-                         ? pathname === "/"
-                         : pathname === route || pathname.startsWith(`${route}/`);
-                     return (
-                      <SheetClose asChild key={i}>
-                       <Link
-                         
-                         href={route}
-                         style={{
-                           background: "none",
-                           border: "none",
-                          //  borderBottom: isActive
-                          //    ? `2px solid ${C.bord}`
-                          //    : "2px solid transparent",
-                           color: isActive ? C.navy : C.dark,
-                           fontSize: 14,
-                           fontWeight: isActive ? 700 : 400,
-                           padding: "8px 9px",
-                           cursor: "pointer",
-                           fontFamily: "inherit",
-                           whiteSpace: "nowrap",
-                           display: "flex",
-                           alignItems: "center",
-                           gap: 3,
-                           textDecoration: "none",
-                         }}
-                       >
-                         {item}
-                         {i > 0 && (
-                           <svg
-                             width={12}
-                             height={12}
-                             viewBox="0 0 24 24"
-                             fill="none"
-                             stroke="currentColor"
-                             strokeWidth="2.5"
-                           >
-                             <path d="M6 9l6 6 6-6" />
-                           </svg>
-                         )}
-                       </Link>
-                       </SheetClose>
-                     );
-                   })}
-                 </nav>
+                
+         {/* Navigation */}
+        <nav className="hidden md:flex md:flex-wrap">
+          {navLabels.map((item: string, i: number) => (
+            <button
+              key={i}
+              onClick={() => {
+                if (i === 5) {
+                  setNntvOpen(true);
+                  setModal(null);
+                } else if (i === 0) {
+                  closeModal();
+                } else {
+                  setModal(`nav-${i}`);
+                }
+              }}
+              style={{
+                background: "none",
+                border: "none",
+                borderBottom:
+                  modal === `nav-${i}` ||
+                  (i === 0 && modal === null && !nntvOpen)
+                    ? `2px solid ${C.bord}`
+                    : "2px solid transparent",
+                color:
+                  modal === `nav-${i}` ||
+                  (i === 0 && modal === null && !nntvOpen)
+                    ? C.white
+                    : C.muted,
+                fontSize: 10,
+                fontWeight:
+                  modal === `nav-${i}` ||
+                  (i === 0 && modal === null && !nntvOpen)
+                    ? 700
+                    : 400,
+                padding: "8px 9px",
+                cursor: "pointer",
+                fontFamily: "inherit",
+                whiteSpace: "nowrap",
+                display: "flex",
+                alignItems: "center",
+                gap: 3,
+              }}
+            >
+              {item}
+              {i > 0 && (
+                <svg
+                  width={8}
+                  height={8}
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.5"
+                >
+                  <path d="M6 9l6 6 6-6" />
+                </svg>
+              )}
+            </button>
+          ))}
+        </nav>
                  <Separator/>
 
+{/* lnaguage */}
  <div  className="md:hidden flex gap-6 items-center mt-8">
           {LANGS.map((l) => {
             const localeMap: Record<string, string> = { FR: 'fr', HT: 'ht', EN: 'en', ESP: 'es' };

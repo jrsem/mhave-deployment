@@ -558,13 +558,14 @@ export default function MhavelHsiSovereignPortal() {
 
       {/* Hero */}
       <section
-        className="mh-hero"
+        
         style={{
           background:
             "linear-gradient(160deg,#001540 0%,#002060 65%,#003080 100%)",
           padding: "48px 18px 0",
           textAlign: "center",
         }}
+        className="mh-hero pt-20 md:pt-30!"
       >
         <h1
           className="mh-h1"
