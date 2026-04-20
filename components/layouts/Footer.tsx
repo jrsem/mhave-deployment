@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
-import { LOGO } from "@/app/[locale]/page";
+import { LOGO } from "@/constants/logo";
 
 
 export default function Footer() {

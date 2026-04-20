@@ -1,1 +1,1 @@
-export { HERO_T } from "@/translations";
+// export { HERO_T } from "@/translations";
