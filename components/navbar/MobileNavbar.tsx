@@ -147,6 +147,7 @@ const MobileNavbar = () => {
             const targetLocale = localeMap[l];
             const isActive = currentLocale.toUpperCase() === l;
             return (
+              <SheetClose asChild key={l}>
               <Link
                 key={l}
                 href="/"
@@ -166,6 +167,7 @@ const MobileNavbar = () => {
               >
                 {l}
               </Link>
+              </SheetClose>
             );
           })}
         </div>
