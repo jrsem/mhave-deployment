@@ -521,6 +521,8 @@ export default function MhavelHsiSovereignPortal() {
           ))}
         </nav>
 
+        
+
         <div  className="hidden md:flex gap-1 items-center">
           {LANGS.map((l) => {
             const localeMap: Record<string, string> = { FR: 'fr', HT: 'ht', EN: 'en', ESP: 'es' };
@@ -565,7 +567,7 @@ export default function MhavelHsiSovereignPortal() {
           padding: "48px 18px 0",
           textAlign: "center",
         }}
-        className="mh-hero pt-20 md:pt-30!"
+        className="mh-hero pt-30! md:pt-40!"
       >
         <h1
           className="mh-h1"
