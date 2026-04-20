@@ -377,11 +377,11 @@ export default function MhavelHsiSovereignPortal() {
           flexWrap: "wrap",
           // gap: 8,
           borderBottom: `3px solid ${C.bord}`,
-          position: "sticky",
+          // position: "sticky",
           top: 0,
           zIndex: 50,
         }}
-        className="md:mh-hdr gap-2 flex items-center justify-between md:py-2.5 md:px-4.5 py-2  w-full!"
+        className="md:mh-hdr gap-2 flex items-center justify-between md:py-2.5 md:px-4.5 py-2 fixed! w-full!"
       >
         <div
           style={{
