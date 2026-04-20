@@ -6,7 +6,7 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
 import Image from "next/image";
 import MobileNavbar from "@/components/navbar/MobileNavbar";
-import Presentation from "@/components/Presentation";
+import Presentation from "@/modalPages/Presentation";
 const C = {
   navy: "#002060",
   dark: "#001040",
