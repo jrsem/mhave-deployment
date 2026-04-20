@@ -76,6 +76,17 @@ input:focus-visible {
   --radius-2xl: calc(var(--radius) * 1.8);
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
+
+    /* COLOR */
+  --color-navy: #002060;
+  --color-dark: #001040;
+  --color-bord: #B91C1C;
+  --color-cream: #FCF9E8;
+  --color-muted: #93a4c4;
+  --color-green: #10B981;
+  --color-red: #EF4444;
+  --color-white: #ffffff;
+  --spacing-18: 4.5rem;
 }
 
 :root {
@@ -158,3 +169,12 @@ input:focus-visible {
     @apply font-sans;
   }
 }
+
+ .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 2rem;
+        }
