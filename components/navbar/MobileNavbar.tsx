@@ -11,24 +11,21 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
-import { HiOutlineMenu } from "react-icons/hi";
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { Separator } from '../ui/separator';
 import { C, LOGO, NAV_ROUTES } from '@/constants';
-// import { C } from "@/constants/colors";
-import { useMhave } from "@/context/MhaveContext";
 
+import { useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
-import { NAV_LABELS } from '@/data';
-import Ninu from '../Dialogue/Ninu';
-import { Button } from '../ui/button';
-import NinuMobile from '../Dialogue/NinuMobile';
-const MobileNavbar = () => {
 
-  const { lang, setLang } = useMhave();
+
+const MobileNavbar = () => {
+ const navT = useTranslations("Navigation");
+ 
     const pathname = usePathname();
-    const nav: string[] = NAV_LABELS[lang];
+     const navLabels = navT.raw("labels") as string[];
   return (
     <div className='md:hidden z-99'>
       <Sheet>
@@ -42,7 +39,7 @@ const MobileNavbar = () => {
                 alt='mhave'
                 className='text-white bg-transparent'
               /> */}
-              <RiMenu3Fill className='w-6 h-6 text-navy'/>
+              <RiMenu3Fill className='w-6 h-6 text-white'/>
       </div>
         </SheetTrigger>
         <SheetContent side='left' className=" border-none bg-white flex flex-col px-4!">
@@ -92,7 +89,7 @@ const MobileNavbar = () => {
 
             {/* Navigation */}
                  <nav className="md:hidden flex flex-col">
-                   {nav.map((item: string, i: number) => {
+                   {navLabels.map((item: string, i: number) => {
                      const route = NAV_ROUTES[i];
                      const isActive =
                        route === "/"
@@ -142,12 +139,10 @@ const MobileNavbar = () => {
                  </nav>
                  <Separator/>
 
-                 <SheetClose asChild >
-                  <NinuMobile/>
-                  </SheetClose>
+            
             <SheetHeader>
             <SheetTitle>MHAVE</SheetTitle>
-            <SheetDescription>Ministère des Haïtiens vivant à l'Étranger.</SheetDescription>
+            <SheetDescription>Ministère des Haïtiens vivant à lÉtranger.</SheetDescription>
             </SheetHeader>
         </SheetContent>
         </Sheet>

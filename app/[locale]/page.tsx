@@ -367,20 +367,21 @@ export default function MhavelHsiSovereignPortal() {
 
       {/* Header */}
       <header
-        className="mh-hdr"
+      
         style={{
           background: C.navy,
           padding: "10px 18px",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
+          // display: "flex",
+          // alignItems: "center",
+          // justifyContent: "space-between",
           flexWrap: "wrap",
-          gap: 8,
+          // gap: 8,
           borderBottom: `3px solid ${C.bord}`,
           position: "sticky",
           top: 0,
-          zIndex: 99,
+          zIndex: 50,
         }}
+        className="md:mh-hdr gap-2 flex items-center justify-between md:py-2.5 md:px-4.5 py-2  w-full!"
       >
         <div
           style={{
@@ -390,7 +391,7 @@ export default function MhavelHsiSovereignPortal() {
             flexShrink: 0,
           }}
         >
-          <span className="flex gap- items-center">
+          <span className="flex gap-2 items-center">
             <Image
               src={LOGO}
               alt="Sceau MHAVE"
@@ -406,7 +407,7 @@ export default function MhavelHsiSovereignPortal() {
               className="md:hidden"
             />
 
-          <div className="text-navy font-bold text-md leading-tight md:hidden">
+          <div className="text-white font-bold text-md leading-tight md:hidden">
             MHAVE
           </div>
          </span>
@@ -461,7 +462,7 @@ export default function MhavelHsiSovereignPortal() {
         </div>
 
          {/* Navigation */}
-        <nav style={{ display: "flex", flexWrap: "wrap", gap: 0 }}>
+        <nav className="hidden md:flex md:flex-wrap">
           {navLabels.map((item: string, i: number) => (
             <button
               key={i}
@@ -519,7 +520,8 @@ export default function MhavelHsiSovereignPortal() {
             </button>
           ))}
         </nav>
-        <div style={{ display: "flex", gap: 3 }}>
+
+        <div  className="hidden md:flex gap-1 items-center">
           {LANGS.map((l) => {
             const localeMap: Record<string, string> = { FR: 'fr', HT: 'ht', EN: 'en', ESP: 'es' };
             const targetLocale = localeMap[l];

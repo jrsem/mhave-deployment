@@ -47,9 +47,11 @@ export default async function RootLayout({
   if (!validLocales.includes(locale)) notFound();
   return (
     <html lang={locale}>
-      <body>
+      <body >
         <NextIntlClientProvider locale={locale} messages={messages}>
-          {children}
+          <main className="overflow-x-hidden">
+            {children}
+          </main>
           {/* <Footer /> */}
         </NextIntlClientProvider>
       </body>
