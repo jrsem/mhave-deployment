@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Footer from "@/components/layouts/Footer";
+import { Header } from "@/components/layouts/Header";
+import { Sidebar } from "@/components/layouts/Sidebar";
 import { getMessages } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { notFound } from "next/navigation";
@@ -33,13 +35,12 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({
   children,
-  params
+  params,
 }: {
   children: React.ReactNode;
-  params: Promise<{locale: string}>;
+  params: Promise<{ locale: string }>;
 }) {
-
-  const {locale} = await params;
+  const { locale } = await params;
   // Providing all messages to the client side
   const messages = await getMessages();
   // Validate locale
