@@ -4,6 +4,8 @@ import { useParams } from "next/navigation";
 import {Footer} from "../components/Footer"
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
+import Image from "next/image";
+import MobileNavbar from "@/components/navbar/MobileNavbar";
 const C = {
   navy: "#002060",
   dark: "#001040",
@@ -388,45 +390,77 @@ export default function MhavelHsiSovereignPortal() {
             flexShrink: 0,
           }}
         >
-          <img
-            src={LOGO}
-            alt="Sceau MHAVE"
-            width={54}
-            height={54}
+          <span className="flex gap- items-center">
+            <Image
+              src={LOGO}
+              alt="Sceau MHAVE"
+              width={50}
+              height={50}
+              unoptimized
+              style={{
+                borderRadius: "50%",
+                objectFit: "cover",
+                border: "2px solid rgba(255,255,255,0.25)",
+                flexShrink: 0,
+              }}
+              className="md:hidden"
+            />
+
+          <div className="text-navy font-bold text-md leading-tight md:hidden">
+            MHAVE
+          </div>
+         </span>
+
+
+
+          {/* Logo + titre */}
+      <div
+        className="hidden md:flex items-center gap-3 shrink-0"
+      >
+        <Image
+          src={LOGO}
+          alt="Sceau MHAVE"
+          width={54}
+          height={54}
+          unoptimized
+          style={{
+            borderRadius: "50%",
+            objectFit: "cover",
+            border: "2px solid rgba(255,255,255,0.25)",
+            flexShrink: 0,
+          }}
+        />
+
+        
+
+        <div className="hidden md:flex flex-col">
+          <div
+            className="text-navy font-bold text-sm leading-tight"
+          >
+            Ministère des Haïtiens
+          </div>
+          <div
             style={{
-              borderRadius: "50%",
-              objectFit: "cover",
-              border: "2px solid rgba(255,255,255,0.25)",
-              flexShrink: 0,
+              color: C.white,
+              fontSize: 14,
+              fontWeight: 700,
+              lineHeight: 1.25,
             }}
-          />
-          <div>
-            <div
-              style={{
-                color: C.white,
-                fontSize: 14,
-                fontWeight: 700,
-                lineHeight: 1.25,
-              }}
-            >
-              Ministère des Haïtiens
-            </div>
-            <div
-              style={{
-                color: C.white,
-                fontSize: 14,
-                fontWeight: 700,
-                lineHeight: 1.25,
-              }}
-            >
-              Vivant à l&apos;Étranger –{" "}
-              <span style={{ color: "#fca5a5" }}>MHAVE</span>
-            </div>
-            <div style={{ color: C.muted, fontSize: 8, marginTop: 1 }}>
-              mhave.gouv.ht
-            </div>
+            className="text-navy!"
+          >
+            Vivant à l&apos;Étranger –{" "}
+            <span style={{ color: "#fca5a5" }} className="text-red!">MHAVE</span>
+          </div>
+          <div style={{ color: C.muted, fontSize: 8, marginTop: 1 }} className="text-dark!">
+            mhave.gouv.ht
           </div>
         </div>
+      </div>
+
+
+        </div>
+
+         {/* Navigation */}
         <nav style={{ display: "flex", flexWrap: "wrap", gap: 0 }}>
           {navLabels.map((item: string, i: number) => (
             <button
@@ -513,6 +547,8 @@ export default function MhavelHsiSovereignPortal() {
             );
           })}
         </div>
+        {/* mobile navigation */}
+         <MobileNavbar/>
       </header>
 
       {/* Main content wrapper */}
