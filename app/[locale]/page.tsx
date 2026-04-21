@@ -485,7 +485,7 @@ export default function MhavelHsiSovereignPortal() {
               fontWeight: 700,
               lineHeight: 1.25,
             }}
-            className="text-navy!"
+            className="text-white!"
           >
             Vivant à l&apos;Étranger –{" "}
             <span style={{ color: "#fca5a5" }} className="text-red!">MHAVE</span>
