@@ -192,7 +192,7 @@ const Presentation = () => {
                 height={50}
                   alt="Marie-Luce Clergé" 
                   className="object-cover! w-full! h-full! grayscale! group-hover:grayscale-0! transition-all!"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQ9gzn20KhqKK-hb3AWx8FTWddth4nh5roMXBOJ9TWH62ENG6aLJ3otQ3v8JfXxaHNwsvyxV2zBUsJW-oICb_9h7PxqgM5zTc673h1vs09gDwTyoEa51VWAwMRyFKklNb4UcrXQjD7-Jpaj-FCY5YzNJuZtjDsGrlfnHx0O_QpuVOnOJKrO7Ww1uPRX_rwFMDn402xwiDhNpD2Q2XgbBJGoye37FusFoGJjkJ-324txrn-qrV0ejQDvb5nv9njos-2AnwwfAsBo2A"
+                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop&crop=face"
                 />
               </div>
               <h4 className="font-bold! text-[#0B2F6B]! text-base! mb-1!">Marie-Luce Clergé</h4>
@@ -215,7 +215,7 @@ const Presentation = () => {
                 height={50} 
                   alt="Jean-Marc Valbrun" 
                   className="object-cover! w-full! h-full! grayscale! group-hover:grayscale-0! transition-all!"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbD7Nc782LTUI0Vr43HFyn1kWmAX3sLoTQpEA2p2NDLL-2PCVO3p8QFzeKcLF_vzv7WQEwISO6pt9RI3_ZfZtXnd3I9BlrdGJWq73NeLXP_f0s2yZz7dK8WLYtrasrZPNa_xLdN6qZL_os_1DDWaAVV1We73AcRC-sQGliVV8mbcPdNaHimagA9gZy-HBAcCX8my-tACh0Jg-Vjc1dPqHyK2uq0YTWzwzHBM7FMuaXwr4ls9BoR0L-3c0RGeBKTHEyYDYN56m_u48"
+                  src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop&crop=face"
                 />
               </div>
               <h4 className="font-bold! text-[#0B2F6B]! text-base! mb-1!">Jean-Marc Valbrun</h4>
@@ -238,7 +238,7 @@ const Presentation = () => {
                 height={50} 
                   alt="Florence Petit" 
                   className="object-cover! w-full! h-full! grayscale! group-hover:grayscale-0! transition-all!"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoIldj-yhsa6-pu_Ce9RNaTlep_Dxm8ZrkRpwq6cQg50E6s0p_aEjfwRqdVmItCbtA0UQiVyp6_Xhe4NpskXKPYi0OL0GSdME05QGnnWYBRd5rEvW3QnG_Cssys-YzUMTKZmh9Qahmiiy6VVFF0tRVLjugRz0rNmS2v2ZMjxHryhiBvM6_jL-4DOZEHHL6e1QLZP2mhpL7HDQh8-KAaYa2Tt3FbzOsqsfSS-ogvK5ikrww0DrpB0J--12LZr0ju-N7tzWJwvid8sU"
+                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face"
                 />
               </div>
               <h4 className="font-bold! text-[#0B2F6B]! text-base! mb-1!">Florence Petit</h4>
@@ -261,7 +261,7 @@ const Presentation = () => {
                 height={50}  
                   alt="Robert Auguste" 
                   className="object-cover! w-full! h-full! grayscale! group-hover:grayscale-0! transition-all!"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuArvNTRGmsFJfQKpgtUiOGmJZ8R6H8y4eNE_VJ-M0CtI7weo24SVMTjN7aAo7w283jqNnpZzHWVQu5PUxf2lSyUOEDjVNSGpebK7KX2BrjLbkCtYCLR7G027uBDRoXHM3W3BCzDuuNg9CmjYmfwFB8aMGa-u2eMOufeHpgih6HGhzejFledtf1RtpH2u2FHhIMrdgHi25q7TvxBwr4h-JpqnIz-m1X3cc4TCPpZaxHUyDWohIwDml64CHFtzfwuK5v96B97eoXU9t0"
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
                 />
               </div>
               <h4 className="font-bold! text-[#0B2F6B]! text-base! mb-1!">Robert Auguste</h4>
